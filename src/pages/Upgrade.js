@@ -73,23 +73,25 @@ const Upgrade = () => {
   const navigate = useNavigate();
   return (
     <div>
-    <div className='upgrade-container'>
-      <p style={{cursor:"pointer"}} onClick={() => window.history.go(-1)}>{"<- Back"}</p>
-      <div className='upgrade-Upper'>
-        <h3>Unlock the power of Resume Shaper</h3>
-        <p>Choose a plan according to your needs</p>
+      <div className="upgrade-container">
+        <p style={{ cursor: "pointer" }} onClick={() => window.history.go(-1)}>
+          {"<- Back"}
+        </p>
+        <div className="upgrade-Upper">
+          <h3>Unlock the power of Resume Shaper</h3>
+          <p>Choose a plan according to your needs</p>
+        </div>
+        <div className="cards-container">
+          <div className="upgradeCards">
+            <Card {...basicPlan} />
+            <Card {...proPlan} />
+          </div>
+          <div className="upgradeCards" style={{ marginTop: "10%" }}>
+            <Card {...premiumPlan} />
+            <Card {...maxPlan} />
+          </div>
+        </div>
       </div>
-      <div className="cards-container">
-      <div className='upgradeCards'>
-        <Card {...basicPlan} />
-        <Card {...proPlan} />
-      </div>
-      <div className='upgradeCards' style={{marginTop:"10%"}}>
-        <Card {...premiumPlan} />
-        <Card {...maxPlan} />
-      </div>
-      </div>
-    </div>
       <FooterReverse />
     </div>
   );
@@ -99,26 +101,44 @@ export default Upgrade;
 
 const Card = ({ planName, price, intialPrice, features, duration }) => {
   const navigate = useNavigate();
-  
-  const clickHandler = (e)=>{
+
+  const clickHandler = (e) => {
     // toast.info("Payment is not in Beta version!")
-    navigate("/payment",{ state: { price } })
-  }
+    navigate("/payment", { state: { price } });
+  };
   return (
-    <div className='card zoom'>
-      <div className='cardUpper'>
-        <h4>{planName} <DatabaseFill
-            color='#347571'
+    <div className="card zoom">
+      <div className="cardUpper">
+        <h4>
+          {planName}{" "}
+          <DatabaseFill
+            color="#ffffff"
             size={22}
             style={{ position: "relative", top: "-3px" }}
-          /></h4>
+          />
+        </h4>
         <h2>
-          <del style={{ fontSize: "21px", marginBottom:"100px" }}>₹{intialPrice}</del> ₹{price}
+          <del style={{ fontSize: "21px", marginBottom: "100px" }}>
+            ₹{intialPrice}
+          </del>{" "}
+          ₹{price}
         </h2>
-        <h6 style={{ color:"black"}}>{duration}</h6>
-        <button onClick={(e) => clickHandler(e)} style={{backgroundColor:"#347571", color:"white", padding:"6px 15px", border:"none", borderRadius:"25px", marginTop:"5px"}}>Upgrade Plan</button>
+        <h6 style={{ color: "black" }}>{duration}</h6>
+        <button
+          onClick={(e) => clickHandler(e)}
+          style={{
+            backgroundColor: "#ffffff",
+            color: "white",
+            padding: "6px 15px",
+            border: "none",
+            borderRadius: "25px",
+            marginTop: "5px",
+          }}
+        >
+          Upgrade Plan
+        </button>
       </div>
-      <div className='cardBottom'>
+      <div className="cardBottom">
         {/* <ul className='custom-list'>
           {features.map((feature, index) => (
             <li key={index}>{feature}</li>

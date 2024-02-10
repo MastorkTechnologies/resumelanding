@@ -90,15 +90,14 @@
   font-size: 15px;
   line-height: 18px;
 }
-.dottedDiv{
+.dottedDiv {
   position: absolute;
-  border: 3px dotted #5ec57e; 
+  border: 3px dotted #5ec57e;
   z-index: 1;
   right: 4%;
   top: -87%;
   height: 130px;
   width: 44%;
-
 }
 
 .Sec1additionalDetails {
@@ -111,7 +110,7 @@
   font-weight: 500;
   margin-bottom: 3%;
 }
-.shiftedSec1additionalDetails{
+.shiftedSec1additionalDetails {
   margin-top: 3.2%;
 }
 
@@ -157,7 +156,7 @@
 .myAccordian {
   margin-bottom: 8%;
 }
-.webisteDiv{
+.webisteDiv {
   position: relative;
 }
 
@@ -200,32 +199,32 @@
   margin-bottom: 0;
   margin-top: 5%;
 }
-.customSecdetailsInfoLabel{
+.customSecdetailsInfoLabel {
   margin-top: 0%;
 }
-.searchDetailsInfoInput{
+.searchDetailsInfoInput {
   width: 80% !important;
 }
-.createLiveSearchDetailsInfoInput{
-  width: 75%!important;
+.createLiveSearchDetailsInfoInput {
+  width: 75% !important;
 }
-.addSkillBtn{
+.addSkillBtn {
   background-color: white;
   border: none;
   margin-left: 2%;
-  color: #347571;
+  color: #ffffff;
   font-weight: 600;
 }
-.addExtraBtns{
+.addExtraBtns {
   width: 100%;
   margin: 3%;
   margin-top: 0%;
   margin-bottom: 10%;
-  color: #347571; 
+  color: #ffffff;
   /* color: #5ec57e; */
   font-size: 18px;
 }
-.saveProfileDiv{
+.saveProfileDiv {
   position: relative;
   align-items: center;
   text-align: center;
@@ -239,9 +238,16 @@
   border-radius: 5px;
   background-color: #c2fbd7;
   border-radius: 25px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
-  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
-  color: green;
+  box-shadow: rgba(0, 123, 255, 0.2) 0 -25px 18px -14px inset,
+    rgba(0, 123, 255, 0.15) 0 1px 2px, rgba(0, 123, 255, 0.15) 0 2px 4px,
+    rgba(0, 123, 255, 0.15) 0 4px 8px, rgba(0, 123, 255, 0.15) 0 8px 16px,
+    rgba(0, 123, 255, 0.15) 0 16px 32px;
+
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  color: blue;
   cursor: pointer;
   display: inline-block;
   font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
@@ -259,15 +265,18 @@
 .saveProfileBtn:hover {
   background-color: #5ec57e;
   color: white;
-  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
 }
-.createCustomAdditons{
+.createCustomAdditons {
   font-size: 16px;
 }
-.createCustomAdditons:hover{
+.createCustomAdditons:hover {
   color: #5ec57e;
 }
-.moveBtnCreateUp{
+.moveBtnCreateUp {
   background-color: transparent;
   /* background-color: #346571; */
   border: none;
@@ -276,9 +285,8 @@
   top: -3% !important;
   width: 10%;
   right: 1% !important;
-
 }
-.moveBtnCreateDown{
+.moveBtnCreateDown {
   background-color: transparent;
   /* background-color: #346571; */
   border: none;

@@ -3,33 +3,41 @@ body {
 }
 
 .signoutBtn {
-  width: 120px;
+  width: 140px;
   border-radius: 5px;
   position: absolute;
   right: 1%;
   top: 2.5%;
-  background-color: #c2fbd7;
+  background: rgb(42, 172, 234);
   border-radius: 25px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
-  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
-  color: green;
+  box-shadow: rgba(0, 123, 255, 0.2) 0 -25px 18px -14px inset,
+    rgba(0, 123, 255, 0.15) 0 1px 2px, rgba(0, 123, 255, 0.15) 0 2px 4px,
+    rgba(0, 123, 255, 0.15) 0 4px 8px, rgba(0, 123, 255, 0.15) 0 8px 16px,
+    rgba(0, 123, 255, 0.15) 0 16px 32px;
+
+  color: white;
   cursor: pointer;
   display: inline-block;
-  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 7px 20px;
   text-align: center;
   text-decoration: none;
   transition: all 250ms;
   border: 0;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
   user-select: none;
   -webkit-user-select: none;
   z-index: 15;
 }
 
 .signoutBtn:hover {
-  box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+  box-shadow: rgba(0, 123, 255, 0.2) 0 -25px 18px -14px inset,
+    rgba(0, 123, 255, 0.15) 0 1px 2px, rgba(0, 123, 255, 0.15) 0 2px 4px,
+    rgba(0, 123, 255, 0.15) 0 4px 8px, rgba(0, 123, 255, 0.15) 0 8px 16px,
+    rgba(0, 123, 255, 0.15) 0 16px 32px;
+  background-color: #ffffff;
+  color: #027ac0;
 }
 
 .homeDiv {
@@ -37,7 +45,6 @@ body {
   margin: auto;
   /* background-color: #151e3d; */
   /* background-image: url("../images/bg.png"); */
-
 }
 
 .HomeLeftDiv {
@@ -47,7 +54,7 @@ body {
   height: 100%;
   padding: 2%;
   /* background-image: url("../images/bg.png"); */
-  background-color: white
+  background-color: white;
 }
 
 .HomeRightDiv {
@@ -75,14 +82,13 @@ body {
 .formTitle {
   text-align: center;
   color: #174f5d;
-  color: #35b276;
+  color: #027ac0;
   color: #151e3d;
   color: #174f5d;
   font-weight: 600;
   margin-top: 3%;
-  margin-bottom:2% ;
-  font-family: 'Open Sans', sans-serif;
-
+  margin-bottom: 2%;
+  font-family: "Open Sans", sans-serif;
 }
 
 .formSubText {
@@ -93,9 +99,9 @@ body {
 }
 
 .hrLine {
-  color: #35b276;
+  color: #027ac0;
   height: 4px;
-  background-color: #35b276;
+  background-color: #027ac0;
   width: 80%;
   margin: auto;
   margin-top: 3%;

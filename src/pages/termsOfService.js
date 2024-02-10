@@ -34,26 +34,26 @@ export default function Terms() {
       {user && user.profile && (
         <button
           onClick={() => handler()}
-          className=' btn btn-success signoutBtn aboutUsSignOutBtn'
+          className=" btn btn-success signoutBtn aboutUsSignOutBtn"
         >
           {" "}
-          <Power color='#35b276' size={22} /> &nbsp;Signout
+          <Power color="#027AC0" size={22} /> &nbsp;Signout
         </button>
       )}
-      {/* {user&&user.profile&&user.credits&&<button  className="tokensBtn"> <Coin color="#35b276" size={22} style={{"position":"relative","top":"-2px"}}/> {user.credits} &nbsp;Credits</button>}   */}
+      {/* {user&&user.profile&&user.credits&&<button  className="tokensBtn"> <Coin color="#027AC0" size={22} style={{"position":"relative","top":"-2px"}}/> {user.credits} &nbsp;Credits</button>}   */}
       {user && user.profile && user.credits && (
         <button
-          className='tokensBtn'
+          className="tokensBtn"
           style={{
             right: "17%",
             fontFamily: "Open Sans",
             fontWeight: "550",
             fontSize: "16px",
-            color: "#347571",
+            color: "#ffffff",
           }}
         >
           <DatabaseFill
-            color='#347571'
+            color="#ffffff"
             size={24}
             style={{ position: "relative", top: "-2px" }}
           />{" "}
@@ -61,19 +61,19 @@ export default function Terms() {
         </button>
       )}
       <Nav />
-      <div className='aboutUsContainer'>
-        <h1 className='aboutUsHeadig'>
+      <div className="aboutUsContainer">
+        <h1 className="aboutUsHeadig">
           <ArrowLeft
-            color='#35b276'
+            color="#027AC0"
             size={30}
-            className='returnBackArrow'
+            className="returnBackArrow"
             onClick={() => returnBack()}
           />
           Terms And Conditions
         </h1>
         <hr></hr>
 
-        <p className='aboutUsContent'>
+        <p className="aboutUsContent">
           <h6 style={{ marginTop: "5%" }}>
             Last updated date: [11th Nov,2023]
           </h6>

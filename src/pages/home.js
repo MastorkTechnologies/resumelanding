@@ -109,7 +109,7 @@ export default function Home() {
   return (
     <>
       <Nav />
-      {/* {user&&user.credits&&<button  className="tokensBtn"> <DatabaseFill color="#35b276" size={22} style={{"position":"relative","top":"-2px"}}/> {user.credits} &nbsp;Credits</button>}   */}
+      {/* {user&&user.credits&&<button  className="tokensBtn"> <DatabaseFill color="#027AC0" size={22} style={{"position":"relative","top":"-2px"}}/> {user.credits} &nbsp;Credits</button>}   */}
       {user && user.credits && (
         // <button
         //   className='tokensBtn'
@@ -117,18 +117,18 @@ export default function Home() {
         //     fontFamily: "Open Sans",
         //     fontWeight: "550",
         //     fontSize: "16px",
-        //     color: "#347571",
+        //     color: "#ffffff",
         //   }}
         // >
         //   <DatabaseFill
-        //     color='#347571'
+        //     color='#ffffff'
         //     size={24}
         //     style={{ position: "relative", top: "-2px" }}
         //   />{" "}
         //   &nbsp;{user.credits} Credits
         // </button>
         <button
-          className='custom-btn btn-2'
+          className="custom-btn btn-2"
           style={{
             "z-index": "45",
             top: "25%",
@@ -137,7 +137,7 @@ export default function Home() {
             fontFamily: "Open Sans",
             textAlign: "left",
             color: "#ecf8e5",
-            backgroundColor: "#347571",
+            backgroundColor: "#ffffff",
             fontWeight: "550",
             display: "flex",
             alignItems: "center",
@@ -146,14 +146,14 @@ export default function Home() {
         >
           {" "}
           <DatabaseFill
-            color='#ecf8e5'
+            color="#ecf8e5"
             size={22}
             style={{ position: "relative", top: "-2px" }}
           />{" "}
           &nbsp;{user.credits}{" "}
           <button
             onClick={() => navigate("/upgrade")}
-            className='custom-btn'
+            className="custom-btn"
             style={{
               width: "100px",
               "z-index": "45",
@@ -161,7 +161,7 @@ export default function Home() {
               right: "0%",
               fontFamily: "Open Sans",
               textAlign: "center",
-              color: "#347571",
+              color: "#ffffff",
               backgroundColor: "#ecf8e5",
               fontWeight: "550",
               paddingLeft: "8px",
@@ -188,19 +188,19 @@ export default function Home() {
           onUpload={handleUpload}
         />
       )}
-      <button onClick={() => handler()} className=' btn btn-success signoutBtn'>
+      <button onClick={() => handler()} className=" btn btn-success signoutBtn">
         {" "}
-        <Power color='#35b276' size={22} /> &nbsp;Signout
+        <Power color="#027AC0" size={22} /> &nbsp;Signout
       </button>
-      <div className='row homeDiv'>
-        <div className='HomeLeftDiv col-md-9 col-sm-9'>
-          <div className='formDetails'>
-            <h3 className='formTitle'>Personalize your Profile</h3>
-            <p className='formSubText'>
+      <div className="row homeDiv">
+        <div className="HomeLeftDiv col-md-9 col-sm-9">
+          <div className="formDetails">
+            <h3 className="formTitle">Personalize your Profile</h3>
+            <p className="formSubText">
               "Tell us more about yourself and the position you're targeting,
               and we'll create a personlized resume just for you."
             </p>
-            <hr className='hrLine' />
+            <hr className="hrLine" />
             <Form
               personalData={personalData}
               setPersonalData={setPersonalData}
@@ -231,12 +231,12 @@ export default function Home() {
                     </div>
                     <div className='col-md-6 sec4MidDiv2'>
                         <h4>Our Features</h4>
-                        <p><Check2Circle color="#35b276" size={20} /> &nbsp;Create Tailored resumes for specific job applications.</p>
-                        <p><Check2Circle color="#35b276" size={19} /> &nbsp;Ensure resume pass through ATS for better visibility. </p>
-                        <p><Check2Circle color="#35b276" size={19} /> &nbsp;Enhance resumes with professional formatting.</p>
-                        <p><Check2Circle color="#35b276" size={19} /> &nbsp;Receive keyword suggestions for better targeting.</p>
-                        <p><Check2Circle color="#35b276" size={19} /> &nbsp;Download customized resumes instanly for multiple job applications.</p>
-                        <p><Check2Circle color="#35b276" size={19} /> &nbsp;Get help from our dedicated support team when you need it.</p>
+                        <p><Check2Circle color="#027AC0" size={20} /> &nbsp;Create Tailored resumes for specific job applications.</p>
+                        <p><Check2Circle color="#027AC0" size={19} /> &nbsp;Ensure resume pass through ATS for better visibility. </p>
+                        <p><Check2Circle color="#027AC0" size={19} /> &nbsp;Enhance resumes with professional formatting.</p>
+                        <p><Check2Circle color="#027AC0" size={19} /> &nbsp;Receive keyword suggestions for better targeting.</p>
+                        <p><Check2Circle color="#027AC0" size={19} /> &nbsp;Download customized resumes instanly for multiple job applications.</p>
+                        <p><Check2Circle color="#027AC0" size={19} /> &nbsp;Get help from our dedicated support team when you need it.</p>
                     </div>
                 </div>
             </div>

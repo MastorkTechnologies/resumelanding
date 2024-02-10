@@ -273,23 +273,20 @@ export default function Dashboard() {
             left: "50%",
             transform: "translate(-50%, -50%)",
           }}
-          width='240'
-          height='240'
-          alt='loading...'
-          src='https://media2.giphy.com/media/MDrmyLuEV8XFOe7lU6/200w.webp?cid=ecf05e47k6onrtqddz8d98s4j5lhtutlnnegeus1pwcdwkxt&ep=v1_gifs_search&rid=200w.webp&ct=g'
+          width="240"
+          height="240"
+          alt="loading..."
+          src="https://media2.giphy.com/media/MDrmyLuEV8XFOe7lU6/200w.webp?cid=ecf05e47k6onrtqddz8d98s4j5lhtutlnnegeus1pwcdwkxt&ep=v1_gifs_search&rid=200w.webp&ct=g"
         />
       ) : (
         <>
           <Nav />
-          <button
-            onClick={() => handler()}
-            className=' btn btn-success signoutBtn'
-          >
+          <button onClick={() => handler()} className=" btn signoutBtn">
             {" "}
-            <Power color='#35b276' size={22} /> &nbsp;Signout
+            <Power color="#027AC0" size={22} /> &nbsp;Signout
           </button>
           <button
-            className='custom-btnlanding btn-2'
+            className="custom-btnlanding btn-2"
             style={{
               "z-index": "45",
               top: "2.5%",
@@ -297,8 +294,8 @@ export default function Dashboard() {
               cursor: "none",
               fontFamily: "Open Sans",
               textAlign: "left",
-              color: "#ecf8e5",
-              backgroundColor: "#347571",
+              color: "rgb(42,172,234)",
+              backgroundColor: "#ffffff",
               fontWeight: "550",
               display: "flex",
               alignItems: "center",
@@ -307,7 +304,7 @@ export default function Dashboard() {
           >
             {" "}
             <DatabaseFill
-              color='#ecf8e5'
+              color="rgb(42,172,234)"
               size={22}
               style={{ position: "relative", top: "-2px" }}
             />
@@ -316,7 +313,7 @@ export default function Dashboard() {
             {"  "}
             <button
               onClick={() => navigate("/upgrade")}
-              className='custom-btnlanding'
+              className="custom-btnlanding"
               style={{
                 width: "100px",
                 "z-index": "45",
@@ -324,8 +321,8 @@ export default function Dashboard() {
                 right: "0%",
                 fontFamily: "Open Sans",
                 textAlign: "center",
-                color: "#347571",
-                backgroundColor: "#ecf8e5",
+                color: "#ffffff",
+                backgroundColor: "rgb(42,172,234)",
                 fontWeight: "550",
                 paddingLeft: "8px",
                 paddingRight: "8px",
@@ -347,64 +344,64 @@ export default function Dashboard() {
               fontFamily: "Open Sans",
               fontWeight: "550",
               fontSize: "16px",
-              color: "#347571",
+              color: "#ffffff",
             }}
           >
             <DatabaseFill
-              color='#347571'
+              color='#ffffff'
               size={24}
               style={{ position: "relative", top: "-2px" }}
             />{" "}
             &nbsp;{user.credits} Credits
           </button> */}
 
-          <div className='dashboardDiv'>
-            <h2 className='formTitle'>Resume Gallery</h2>
-            <p className='formSubText'>
+          <div className="dashboardDiv">
+            <h2 className="formTitle">Resume Gallery</h2>
+            <p className="formSubText">
               "Welcome to your hub for organized resumes.Access, edit, or create
               new resumes for tailored job application."
             </p>
-            <div className='dashHeader'>
+            <div className="dashHeader">
               <h4>Documents</h4>
               <button
-                className='createDoc zoom'
+                className="createDoc zoom"
                 onClick={() => navigate("/create")}
               >
                 <PlusLg size={20} /> &nbsp;Create New
               </button>
 
               <button
-                className='uploadDoc zoom'
+                className="uploadDoc zoom"
                 onClick={() => navigate("/create", { state: { upload: true } })}
-                data-tooltip-id='uploadNewResumeInfo'
-                data-tooltip-content='This will cost 4 credits'
+                data-tooltip-id="uploadNewResumeInfo"
+                data-tooltip-content="This will cost 4 credits"
               >
                 <Upload size={20} /> &nbsp;Upload Resume
               </button>
-              <Tooltip id='uploadNewResumeInfo' />
+              <Tooltip id="uploadNewResumeInfo" />
             </div>
-            <hr className='dashHrLine' />
+            <hr className="dashHrLine" />
             {isPopupOpen && (
               <JobPopup onClose={togglePopup} onSignup={handleSignup} />
             )}
-            <div className='dashContent row'>
+            <div className="dashContent row">
               {savedResumes.map((savedResume) => (
-                <div key={savedResume.id} className='resume1Div col-md-6'>
-                  <div className='row'>
+                <div key={savedResume.id} className="resume1Div col-md-6">
+                  <div className="row">
                     <div
-                      className='col-md-4'
+                      className="col-md-4"
                       onClick={() => openSelectedResume(savedResume.idx)}
                     >
                       <img
                         src={savedResume.img}
-                        className='resumeImg zoom'
-                        alt='Profile Image'
+                        className="resumeImg zoom"
+                        alt="Profile Image"
                       />
-                      <h6 className='resumeTitle'>{savedResume.title}</h6>
+                      <h6 className="resumeTitle">{savedResume.title}</h6>
                     </div>
-                    <div className='col-md-8 editResumeOptions'>
+                    <div className="col-md-8 editResumeOptions">
                       <button
-                        className='editResumeBtns '
+                        className="editResumeBtns "
                         onClick={() => tailor(savedResume.idx)}
                       >
                         <Bullseye size={23} />
@@ -412,7 +409,7 @@ export default function Dashboard() {
                       </button>
                       <br />
                       <button
-                        className='editResumeBtns '
+                        className="editResumeBtns "
                         onClick={() => openSelectedResume(savedResume.idx)}
                       >
                         <PencilFill size={23} />
@@ -420,7 +417,7 @@ export default function Dashboard() {
                       </button>
                       <br />
                       <button
-                        className='editResumeBtns '
+                        className="editResumeBtns "
                         onClick={() => download(savedResume.idx)}
                       >
                         <FileEarmarkArrowDownFill size={23} />
@@ -428,7 +425,7 @@ export default function Dashboard() {
                       </button>
                       <br />
                       <button
-                        className='editResumeBtns '
+                        className="editResumeBtns "
                         onClick={() => delSavedResume(savedResume.id)}
                       >
                         <Trash3Fill size={23} />
@@ -441,16 +438,16 @@ export default function Dashboard() {
                       <br />
                       {/* <button className='editResumeBtns ' onClick={() => console.log("more")}><ThreeDots size={23} />&nbsp;&nbsp;&nbsp;&nbsp;More</button><br /> */}
                     </div>
-                    <p className='resumeDesc'>
+                    <p className="resumeDesc">
                       <strong>Created At : </strong>
                       {savedResume.description}
                     </p>
                   </div>
                 </div>
               ))}
-              <div className='resume1Div col-md-6  '>
-                <div className='addNewResumeDiv zoom' onClick={addSavedResume}>
-                  <button className='editResumeBtns addResumePlusBtn'>
+              <div className="resume1Div col-md-6  ">
+                <div className="addNewResumeDiv zoom" onClick={addSavedResume}>
+                  <button className="editResumeBtns addResumePlusBtn">
                     <PlusLg size={35} />
                     <br />
                   </button>

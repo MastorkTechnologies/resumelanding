@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     color: "#171717",
     fontWeight: "bold",
   },
-  degreeName: {
+  deblueame: {
     paddingLeft: 18,
     fontSize: 12,
   },
@@ -257,7 +257,7 @@ export default function BEDocTemp1({
                 {personalData.educationHistory.map((item, index) => {
                   return (
                     <>
-                      {/* <Text style={[styles.colorThisBlack,styles.degreeName]}>{item.degree}</Text> */}
+                      {/* <Text style={[styles.colorThisBlack,styles.deblueame]}>{item.degree}</Text> */}
                       <Text style={styles.subTitle}>
                         {item.school}, {item.city}
                       </Text>

@@ -708,10 +708,10 @@ export default function CreateLive() {
             left: "50%",
             transform: "translate(-50%, -50%)",
           }}
-          width='240'
-          height='240'
-          alt='loading...'
-          src='https://media2.giphy.com/media/MDrmyLuEV8XFOe7lU6/200w.webp?cid=ecf05e47k6onrtqddz8d98s4j5lhtutlnnegeus1pwcdwkxt&ep=v1_gifs_search&rid=200w.webp&ct=g'
+          width="240"
+          height="240"
+          alt="loading..."
+          src="https://media2.giphy.com/media/MDrmyLuEV8XFOe7lU6/200w.webp?cid=ecf05e47k6onrtqddz8d98s4j5lhtutlnnegeus1pwcdwkxt&ep=v1_gifs_search&rid=200w.webp&ct=g"
         />
       ) : (
         <>
@@ -771,13 +771,13 @@ export default function CreateLive() {
                       top: "33%",
                       right: "13%",
                       fontFamily: "Open Sans",
-                      color: "#347571",
+                      color: "#ffffff",
                       fontWeight: "550",
                     }}
                   >
                     {" "}
                     <DatabaseFill
-                      color='#347571'
+                      color='#ffffff'
                       size={22}
                       style={{ position: "relative", top: "-2px" }}
                     />{" "}
@@ -789,50 +789,50 @@ export default function CreateLive() {
                     className=' btn btn-success signoutBtn createLiveSignOut'
                   >
                     {" "}
-                    <Power color='#35b276' size={22} /> &nbsp;Signout
+                    <Power color='#027AC0' size={22} /> &nbsp;Signout
                   </button>
                 </nav>
               </div> */}
               {/* <button onClick={openJobModal}>Click Here</button>
                         {isJobPopupOpen && <JobPopup onClose={openJobModal} />} */}
               <div>
-                <nav class='navbar bg-body-tertiary myNav createLiveNav'>
+                <nav class="navbar bg-body-tertiary myNav createLiveNav">
                   <div
-                    class='container-fluid'
+                    class="container-fluid"
                     style={{ width: "auto", padding: 0, margin: 0 }}
                   >
-                    <a class='navbar-brand mb-0 h1 navText' href='#'>
+                    <a class="navbar-brand mb-0 h1 navText" href="#">
                       &nbsp; &nbsp;
-                      <img src={img3} class='logoImg' alt='' />
+                      <img src={img3} class="logoImg" alt="" />
                       &nbsp; &nbsp;
                       <strong onClick={redirectHome}>RESUME SHAPER</strong>
                     </a>
                   </div>
                   {/* <button className='downloadPdfBtn zoom'>super</button> */}
-                  <div className='menuoptions2'>
+                  <div className="menuoptions2">
                     <button
                       onClick={(e) => handleLogDetails(e)}
-                      className=' SaveBtn zoom'
+                      className=" SaveBtn zoom"
                       disabled={photoLoader}
                     >
                       Save
                     </button>
                     <button
                       onClick={() => handleDashboard()}
-                      className=' dashboardBtn zoom'
+                      className=" dashboardBtn zoom"
                       disabled={photoLoader}
                     >
                       Dashboard
                     </button>
                     <button
                       onClick={() => handleDownload()}
-                      className=' downloadPdfBtn zoom'
+                      className=" downloadPdfBtn zoom"
                       disabled={photoLoader}
                     >
                       Download PDF
                     </button>
                     <button
-                      className='custom-btn btn-2'
+                      className="custom-btn btn-2"
                       style={{
                         // "z-index": "45",
                         // top: "25%",
@@ -841,7 +841,7 @@ export default function CreateLive() {
                         fontFamily: "Open Sans",
                         textAlign: "left",
                         color: "#ecf8e5",
-                        backgroundColor: "#347571",
+                        backgroundColor: "#ffffff",
                         fontWeight: "550",
                         display: "flex",
                         alignItems: "center",
@@ -850,14 +850,14 @@ export default function CreateLive() {
                     >
                       {" "}
                       <DatabaseFill
-                        color='#ecf8e5'
+                        color="#ecf8e5"
                         size={22}
                         style={{ position: "relative", top: "-2px" }}
                       />{" "}
                       &nbsp;{user.credits}{" "}
                       <button
                         onClick={() => navigate("/upgrade")}
-                        className='custom-btn'
+                        className="custom-btn"
                         style={{
                           width: "100px",
                           "z-index": "45",
@@ -865,7 +865,7 @@ export default function CreateLive() {
                           right: "0%",
                           fontFamily: "Open Sans",
                           textAlign: "center",
-                          color: "#347571",
+                          color: "#ffffff",
                           backgroundColor: "#ecf8e5",
                           fontWeight: "550",
                           paddingLeft: "8px",
@@ -884,36 +884,36 @@ export default function CreateLive() {
                     </button>
                     <button
                       onClick={() => handler()}
-                      className=' btn btn-success signoutBtn createLiveSignOut'
+                      className=" btn btn-success signoutBtn createLiveSignOut"
                     >
-                      <Power color='#35b276' size={22} /> &nbsp;Signout
+                      <Power color="#027AC0" size={22} /> &nbsp;Signout
                     </button>
                   </div>
                   {showMenu && (
-                    <div className='menuoptions'>
+                    <div className="menuoptions">
                       <button
                         onClick={(e) => handleLogDetails(e)}
-                        className=' SaveBtn zoom'
+                        className=" SaveBtn zoom"
                         disabled={photoLoader}
                       >
                         Save
                       </button>
                       <button
                         onClick={() => handleDashboard()}
-                        className=' dashboardBtn zoom'
+                        className=" dashboardBtn zoom"
                         disabled={photoLoader}
                       >
                         Dashboard
                       </button>
                       <button
                         onClick={() => handleDownload()}
-                        className=' downloadPdfBtn zoom'
+                        className=" downloadPdfBtn zoom"
                         disabled={photoLoader}
                       >
                         Download PDF
                       </button>
                       <button
-                        className='custom-btn btn-2'
+                        className="custom-btn btn-2"
                         style={{
                           // "z-index": "45",
                           // top: "25%",
@@ -922,7 +922,7 @@ export default function CreateLive() {
                           fontFamily: "Open Sans",
                           textAlign: "left",
                           color: "#ecf8e5",
-                          backgroundColor: "#347571",
+                          backgroundColor: "#ffffff",
                           fontWeight: "550",
                           display: "flex",
                           alignItems: "center",
@@ -931,14 +931,14 @@ export default function CreateLive() {
                       >
                         {" "}
                         <DatabaseFill
-                          color='#ecf8e5'
+                          color="#ecf8e5"
                           size={22}
                           style={{ position: "relative", top: "-2px" }}
                         />{" "}
                         &nbsp;{user.credits}{" "}
                         <button
                           onClick={() => toast.info("Coming Soon !")}
-                          className='custom-btn'
+                          className="custom-btn"
                           style={{
                             width: "100px",
                             "z-index": "45",
@@ -946,7 +946,7 @@ export default function CreateLive() {
                             right: "0%",
                             fontFamily: "Open Sans",
                             textAlign: "center",
-                            color: "#347571",
+                            color: "#ffffff",
                             backgroundColor: "#ecf8e5",
                             fontWeight: "550",
                             paddingLeft: "8px",
@@ -965,14 +965,14 @@ export default function CreateLive() {
                       </button>
                       <button
                         onClick={() => handler()}
-                        className=' btn btn-success signoutBtn createLiveSignOut'
+                        className=" btn btn-success signoutBtn createLiveSignOut"
                       >
-                        <Power color='#35b276' size={22} /> &nbsp;Signout
+                        <Power color="#027AC0" size={22} /> &nbsp;Signout
                       </button>
                     </div>
                   )}
-                  <button className='menubtn' onClick={handleMenu}>
-                    <List color='#35b276' size={22} />
+                  <button className="menubtn" onClick={handleMenu}>
+                    <List color="#027AC0" size={22} />
                   </button>
                 </nav>
               </div>
@@ -987,55 +987,55 @@ export default function CreateLive() {
                 }}
               >
                 <div style={{ flex: 1 }}>
-                  <div className='createLeftFormDiv'>
-                    <h3 className='formTitle'>Personalize your Profile</h3>
-                    <p className='formSubText'>
+                  <div className="createLeftFormDiv">
+                    <h3 className="formTitle">Personalize your Profile</h3>
+                    <p className="formSubText">
                       "Tell us more about yourself and the position you're
                       targeting, and we'll create a personlized resume just for
                       you."
                     </p>
-                    <hr className='hrLine' />
-                    <h5 className='formSection createFormSection'>
-                      <Crop color='#35b276' size={25} /> &nbsp;Select Template
+                    <hr className="hrLine" />
+                    <h5 className="formSection createFormSection">
+                      <Crop color="#027AC0" size={25} /> &nbsp;Select Template
                     </h5>
-                    <div className='templateDiv'>
+                    <div className="templateDiv">
                       <div
-                        id='carouselExampleIndicators'
-                        className='carousel slide'
+                        id="carouselExampleIndicators"
+                        className="carousel slide"
                       >
-                        <div className='carousel-inner'>
-                          <div className='carousel-item active'>
-                            <div className='row'>
+                        <div className="carousel-inner">
+                          <div className="carousel-item active">
+                            <div className="row">
                               <div
-                                className='col-md-4 zoom'
+                                className="col-md-4 zoom"
                                 onClick={() => setSelectedTemplateId(1)}
                               >
-                                <img src={img4} className='tempalteImage ' />
+                                <img src={img4} className="tempalteImage " />
                               </div>
                               <div
-                                className='col-md-4 zoom'
+                                className="col-md-4 zoom"
                                 onClick={() => setSelectedTemplateId(2)}
                               >
-                                <img src={img5} className='tempalteImage' />
+                                <img src={img5} className="tempalteImage" />
                               </div>
                               <div
-                                className='col-md-4 zoom'
+                                className="col-md-4 zoom"
                                 onClick={() => setSelectedTemplateId(3)}
                               >
-                                <img src={img6} className='tempalteImage' />
+                                <img src={img6} className="tempalteImage" />
                               </div>
                             </div>
                           </div>
-                          <div className='carousel-item'>
-                            <div className='row'>
+                          <div className="carousel-item">
+                            <div className="row">
                               <div
-                                className='col-md-4 zoom'
+                                className="col-md-4 zoom"
                                 onClick={() => setSelectedTemplateId(4)}
                               >
-                                <img src={img7} className='tempalteImage' />
+                                <img src={img7} className="tempalteImage" />
                               </div>
-                              <div className='col-md-4 zoom'></div>
-                              <div className='col-md-4 zoom'></div>
+                              <div className="col-md-4 zoom"></div>
+                              <div className="col-md-4 zoom"></div>
                               {/* <div className='col-md-4 zoom' onClick={()=>setSelectedTemplateId(1)}>
                                                         <img src={img4} className='tempalteImage'/>
                                                     </div>  
@@ -1046,63 +1046,63 @@ export default function CreateLive() {
                           </div>
                         </div>
                         <button
-                          className='carousel-control-prev'
-                          type='button'
-                          data-bs-target='#carouselExampleIndicators'
-                          data-bs-slide='prev'
+                          className="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators"
+                          data-bs-slide="prev"
                         >
                           <span
-                            className='carousel-control-prev-icon'
-                            aria-hidden='true'
+                            className="carousel-control-prev-icon"
+                            aria-hidden="true"
                           ></span>
-                          <span className='visually-hidden'>Previous</span>
+                          <span className="visually-hidden">Previous</span>
                         </button>
                         <button
-                          className='carousel-control-next'
-                          type='button'
-                          data-bs-target='#carouselExampleIndicators'
-                          data-bs-slide='next'
+                          className="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselExampleIndicators"
+                          data-bs-slide="next"
                         >
                           <span
-                            className='carousel-control-next-icon'
-                            aria-hidden='true'
+                            className="carousel-control-next-icon"
+                            aria-hidden="true"
                           ></span>
-                          <span className='visually-hidden'>Next</span>
+                          <span className="visually-hidden">Next</span>
                         </button>
                       </div>
                     </div>
                     <div>
-                      <h5 className='formSection createFormSection'>
-                        <PersonCheck color='#35b276' size={29} /> &nbsp;Personal
+                      <h5 className="formSection createFormSection">
+                        <PersonCheck color="#027AC0" size={29} /> &nbsp;Personal
                         Details
                       </h5>
                       <form onSubmit={handleLogDetails}>
-                        <div className='row'>
-                          <div className='col-md-6'>
-                            <label className='detailsInfoLabel'>
+                        <div className="row">
+                          <div className="col-md-6">
+                            <label className="detailsInfoLabel">
                               Target Position{" "}
                               <span style={{ color: "red" }}>*</span>
                             </label>
                             <br />
                             <input
-                              className='detailsInfoInput'
-                              type='text'
-                              name='jobTitle'
+                              className="detailsInfoInput"
+                              type="text"
+                              name="jobTitle"
                               value={personalData.jobTitle}
                               onChange={handleChange}
-                              required='true'
+                              required="true"
                             />
                           </div>
 
-                          <div className='col-md-6 uplouploadPictureBigDiv'>
-                            <label className='detailsInfoLabel uplouploadPictureDivLabel createUplouploadPictureDivLabel'>
+                          <div className="col-md-6 uplouploadPictureBigDiv">
+                            <label className="detailsInfoLabel uplouploadPictureDivLabel createUplouploadPictureDivLabel">
                               Upload Photo
                             </label>
                             <input
-                              type='file'
-                              className='detailsInfoInput uploadPictureInput createUploadPictureInput'
-                              name='photo'
-                              accept='image/*'
+                              type="file"
+                              className="detailsInfoInput uploadPictureInput createUploadPictureInput"
+                              name="photo"
+                              accept="image/*"
                               onChange={handleChange}
                             />
 
@@ -1110,151 +1110,151 @@ export default function CreateLive() {
                               !photoLoader && (
                                 <PersonSquare
                                   size={70}
-                                  className='uplouploadPhotoDivIcon createUplouploadPhotoDivIcon'
+                                  className="uplouploadPhotoDivIcon createUplouploadPhotoDivIcon"
                                 />
                               )}
                             {!photoLoader && personalData.uploadedPhotoURL && (
-                              <div className='uplouploadPhotoDiv'>
+                              <div className="uplouploadPhotoDiv">
                                 <img
                                   src={personalData.uploadedPhotoURL}
-                                  className='uploadedPicture createUploadedPicture'
-                                  alt='Uploaded'
-                                  width='70'
+                                  className="uploadedPicture createUploadedPicture"
+                                  alt="Uploaded"
+                                  width="70"
                                 />
                               </div>
                             )}
                             {photoLoader && (
-                              <div className='uplouploadPhotoDivGif createUplouploadPhotoDivGif'>
+                              <div className="uplouploadPhotoDivGif createUplouploadPhotoDivGif">
                                 <iframe
-                                  src='https://giphy.com/embed/3oEjI6SIIHBdRxXI40'
-                                  class='giphy-embed uploadedPicture uplouploadPhotoDivGif createUplouploadPhotoDivGif'
+                                  src="https://giphy.com/embed/3oEjI6SIIHBdRxXI40"
+                                  class="giphy-embed uploadedPicture uplouploadPhotoDivGif createUplouploadPhotoDivGif"
                                 ></iframe>
                                 <p>
                                   <a
-                                    className='uplouploadPhotoDivGif'
-                                    href='https://giphy.com/gifs/mashable-3oEjI6SIIHBdRxXI40'
+                                    className="uplouploadPhotoDivGif"
+                                    href="https://giphy.com/gifs/mashable-3oEjI6SIIHBdRxXI40"
                                   ></a>
                                 </p>
                               </div>
                             )}
                             <button
                               onClick={deleteUploadedPicOfForm}
-                              className='DeleteEmp deleteUploadedPhotoIcon'
+                              className="DeleteEmp deleteUploadedPhotoIcon"
                             >
                               <Trash3Fill size={20} />
                             </button>
                           </div>
 
-                          <div className='col-md-6 col-sm-6'>
-                            <label className='detailsInfoLabel'>
+                          <div className="col-md-6 col-sm-6">
+                            <label className="detailsInfoLabel">
                               First Name:{" "}
                               <span style={{ color: "red" }}>*</span>
                             </label>
                             <br />
                             <input
-                              type='text'
-                              className='detailsInfoInput'
-                              name='firstName'
+                              type="text"
+                              className="detailsInfoInput"
+                              name="firstName"
                               value={personalData.firstName}
                               onChange={handleChange}
-                              required='true'
+                              required="true"
                             />
                           </div>
 
-                          <div className='col-md-6 col-sm-6'>
-                            <label className='detailsInfoLabel'>
+                          <div className="col-md-6 col-sm-6">
+                            <label className="detailsInfoLabel">
                               Middle Name:
                             </label>
                             <br />
                             <input
-                              type='text'
-                              className='detailsInfoInput'
-                              name='middleName'
+                              type="text"
+                              className="detailsInfoInput"
+                              name="middleName"
                               value={personalData.middleName}
                               onChange={handleChange}
                             />
                           </div>
 
-                          <div className='col-md-6 col-sm-6'>
-                            <label className='detailsInfoLabel'>
+                          <div className="col-md-6 col-sm-6">
+                            <label className="detailsInfoLabel">
                               Last Name:
                             </label>
                             <br />
                             <input
-                              className='detailsInfoInput'
-                              type='text'
-                              name='lastName'
+                              className="detailsInfoInput"
+                              type="text"
+                              name="lastName"
                               value={personalData.lastName}
                               onChange={handleChange}
                             />
                           </div>
 
-                          <div className='col-md-6 col-sm-6'>
-                            <label className='detailsInfoLabel'>
+                          <div className="col-md-6 col-sm-6">
+                            <label className="detailsInfoLabel">
                               Email: <span style={{ color: "red" }}>*</span>
                             </label>
                             <br />
                             <input
-                              className='detailsInfoInput'
-                              type='email'
-                              name='inputEmail'
+                              className="detailsInfoInput"
+                              type="email"
+                              name="inputEmail"
                               value={personalData.inputEmail}
                               onChange={handleChange}
-                              required='true'
+                              required="true"
                             />
                           </div>
 
-                          <div className='col-md-6 col-sm-6'>
-                            <label className='detailsInfoLabel'>
+                          <div className="col-md-6 col-sm-6">
+                            <label className="detailsInfoLabel">
                               Phone: <span style={{ color: "red" }}>*</span>
                             </label>
                             <br />
                             <input
-                              className='detailsInfoInput'
-                              type='number'
-                              name='phone'
+                              className="detailsInfoInput"
+                              type="number"
+                              name="phone"
                               value={personalData.phone}
                               onChange={handleChange}
-                              required='true'
+                              required="true"
                             />
                           </div>
 
-                          <div className='col-md-6 col-sm-6'>
-                            <label className='detailsInfoLabel'>
+                          <div className="col-md-6 col-sm-6">
+                            <label className="detailsInfoLabel">
                               Date of Birth:{" "}
                               <span style={{ color: "red" }}>*</span>
                             </label>
                             <br />
                             <input
-                              className='detailsInfoInput'
-                              type='date'
-                              name='dateOfBirth'
+                              className="detailsInfoInput"
+                              type="date"
+                              name="dateOfBirth"
                               value={personalData.dateOfBirth}
                               onChange={handleChange}
-                              required='true'
+                              required="true"
                             />
                           </div>
 
-                          <div className='col-md-6 col-sm-6'>
-                            <label className='detailsInfoLabel cityLabelForm'>
+                          <div className="col-md-6 col-sm-6">
+                            <label className="detailsInfoLabel cityLabelForm">
                               City: <span style={{ color: "red" }}>*</span>
                             </label>
                             <br />
                             <input
-                              className='detailsInfoInput'
-                              type='text'
-                              name='city'
+                              className="detailsInfoInput"
+                              type="text"
+                              name="city"
                               value={personalData.city}
                               onChange={handleChange}
-                              required='true'
+                              required="true"
                             />
                           </div>
                           <br />
 
                           <button
-                            type='button'
+                            type="button"
                             onClick={toggleAdditionalDetails}
-                            className='Sec1additionalDetails shiftedSec1additionalDetails'
+                            className="Sec1additionalDetails shiftedSec1additionalDetails"
                           >
                             {showAdditionalDetails
                               ? "Hide All Additional Details"
@@ -1263,86 +1263,86 @@ export default function CreateLive() {
                         </div>
 
                         {showAdditionalDetails && (
-                          <div className='row'>
-                            <div className='col-md-6 col-sm-6'>
-                              <label className='detailsInfoLabel'>
+                          <div className="row">
+                            <div className="col-md-6 col-sm-6">
+                              <label className="detailsInfoLabel">
                                 Address:
                               </label>
                               <br />
                               <input
-                                className='detailsInfoInput'
-                                type='text'
-                                name='address'
+                                className="detailsInfoInput"
+                                type="text"
+                                name="address"
                                 value={personalData.address}
                                 onChange={handleChange}
                               />
                             </div>
 
-                            <div className='col-md-6 col-sm-6'>
-                              <label className='detailsInfoLabel'>
+                            <div className="col-md-6 col-sm-6">
+                              <label className="detailsInfoLabel">
                                 Postal Code:
                               </label>
                               <br />
                               <input
-                                className='detailsInfoInput'
-                                type='number'
-                                name='postalCode'
+                                className="detailsInfoInput"
+                                type="number"
+                                name="postalCode"
                                 value={personalData.postalCode}
                                 onChange={handleChange}
                               />
                             </div>
 
-                            <div className='col-md-6 col-sm-6'>
-                              <label className='detailsInfoLabel'>
+                            <div className="col-md-6 col-sm-6">
+                              <label className="detailsInfoLabel">
                                 Driving License:
                               </label>
                               <br />
                               <input
-                                className='detailsInfoInput'
-                                type='text'
-                                name='drivingLicense'
+                                className="detailsInfoInput"
+                                type="text"
+                                name="drivingLicense"
                                 value={personalData.drivingLicense}
                                 onChange={handleChange}
                               />
                             </div>
 
-                            <div className='col-md-6 col-sm-6'>
-                              <label className='detailsInfoLabel'>
+                            <div className="col-md-6 col-sm-6">
+                              <label className="detailsInfoLabel">
                                 Nationality:
                               </label>
                               <br />
                               <input
-                                className='detailsInfoInput'
-                                type='text'
-                                name='nationality'
+                                className="detailsInfoInput"
+                                type="text"
+                                name="nationality"
                                 value={personalData.nationality}
                                 onChange={handleChange}
                               />
                             </div>
 
-                            <div className='col-md-6 col-sm-6'>
-                              <label className='detailsInfoLabel'>
+                            <div className="col-md-6 col-sm-6">
+                              <label className="detailsInfoLabel">
                                 Place of Birth:
                               </label>
                               <br />
                               <input
-                                className='detailsInfoInput'
-                                type='text'
-                                name='placeOfBirth'
+                                className="detailsInfoInput"
+                                type="text"
+                                name="placeOfBirth"
                                 value={personalData.placeOfBirth}
                                 onChange={handleChange}
                               />
                             </div>
 
-                            <div className='col-md-6 col-sm-6'>
-                              <label className='detailsInfoLabel'>
+                            <div className="col-md-6 col-sm-6">
+                              <label className="detailsInfoLabel">
                                 Country:
                               </label>
                               <br />
                               <input
-                                className='detailsInfoInput'
-                                type='text'
-                                name='country'
+                                className="detailsInfoInput"
+                                type="text"
+                                name="country"
                                 value={personalData.country}
                                 onChange={handleChange}
                               />
@@ -1351,82 +1351,82 @@ export default function CreateLive() {
                         )}
                         <br />
 
-                        <h5 className='formSection'>
-                          <PenFill color='#35b276' size={24} />{" "}
+                        <h5 className="formSection">
+                          <PenFill color="#027AC0" size={24} />{" "}
                           &nbsp;Professional Summary
                           <span style={{ color: "red" }}>*</span>
                         </h5>
-                        <p className='detailsSubText'>
+                        <p className="detailsSubText">
                           Compose a professional summary to showcase your
                           expertise. For instance: 'Results driven marketing
                           professional with 8 years of experience,excelling in
                           digital strategy and campaign optimization.'
                         </p>
                         <textarea
-                          name='professionalSummary'
+                          name="professionalSummary"
                           value={personalData.professionalSummary}
                           onChange={handleChange}
-                          rows='6'
-                          placeholder='Eg: Passionate Software Developer with 8+ years of Building High Enterprise Level Applications'
-                          className='detailsTextarea'
-                          required='true'
+                          rows="6"
+                          placeholder="Eg: Passionate Software Developer with 8+ years of Building High Enterprise Level Applications"
+                          className="detailsTextarea"
+                          required="true"
                         ></textarea>
 
-                        <h5 className='formSection'>
-                          <JournalBookmarkFill color='#35b276' size={26} />{" "}
+                        <h5 className="formSection">
+                          <JournalBookmarkFill color="#027AC0" size={26} />{" "}
                           &nbsp;Employment History
                         </h5>
-                        <p className='detailsSubText'>
+                        <p className="detailsSubText">
                           Let's capture your last 10 years of work experience,
                           ensuring your resume reflects your growth,skills and
                           accomplishments effectively.
                         </p>
 
                         <div
-                          class='accordion myAccordian'
-                          id='accordionExample'
+                          class="accordion myAccordian"
+                          id="accordionExample"
                         >
-                          <div class='accordion-item'>
-                            <h2 class='accordion-header'>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
                               <button
-                                class='accordion-button collapsed'
-                                type='button'
-                                data-bs-toggle='collapse'
-                                data-bs-target='#collapseTwo'
-                                aria-expanded='false'
-                                aria-controls='collapseTwo'
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="collapseTwo"
                               >
                                 Add Employment
                               </button>
                             </h2>
                             <div
-                              id='collapseTwo'
-                              class='accordion-collapse collapse show'
-                              data-bs-parent='#accordionExample'
+                              id="collapseTwo"
+                              class="accordion-collapse collapse show"
+                              data-bs-parent="#accordionExample"
                             >
-                              <div class='accordion-body'>
+                              <div class="accordion-body">
                                 {personalData.employmentHistory !== undefined &&
                                   personalData.employmentHistory.length > 0 &&
                                   personalData.employmentHistory.map(
                                     (employment, index) => (
                                       <div
                                         key={index}
-                                        className='employmentHistoryDiv'
+                                        className="employmentHistoryDiv"
                                       >
-                                        <h5 className='personalSubSubHeading'>
+                                        <h5 className="personalSubSubHeading">
                                           Snapshot {index + 1} :
                                         </h5>
-                                        <div className='row'>
+                                        <div className="row">
                                           {index > 0 && (
                                             <button
-                                              type='button'
+                                              type="button"
                                               onClick={() =>
                                                 moveEmployment(index, index - 1)
                                               }
-                                              className='moveBtnCreateUp'
+                                              className="moveBtnCreateUp"
                                             >
                                               <CaretUpSquareFill
-                                                color='#35b276'
+                                                color="#027AC0"
                                                 size={16}
                                               />
                                             </button>
@@ -1436,27 +1436,27 @@ export default function CreateLive() {
                                               .length -
                                               1 && (
                                             <button
-                                              type='button'
+                                              type="button"
                                               onClick={() =>
                                                 moveEmployment(index, index + 1)
                                               }
-                                              className='moveBtnCreateDown'
+                                              className="moveBtnCreateDown"
                                             >
                                               <CaretDownSquareFill
-                                                color='#35b276'
+                                                color="#027AC0"
                                                 size={16}
                                               />
                                             </button>
                                           )}
 
-                                          <div className='col-md-6'>
-                                            <label className='detailsInfoLabel'>
+                                          <div className="col-md-6">
+                                            <label className="detailsInfoLabel">
                                               Job Title
                                             </label>
                                             <br />
                                             <input
-                                              className='detailsInfoInput'
-                                              type='text'
+                                              className="detailsInfoInput"
+                                              type="text"
                                               value={employment.jobTitle}
                                               onChange={(e) =>
                                                 updateEmploymentField(
@@ -1468,14 +1468,14 @@ export default function CreateLive() {
                                             />
                                           </div>
 
-                                          <div className='col-md-6'>
-                                            <label className='detailsInfoLabel'>
+                                          <div className="col-md-6">
+                                            <label className="detailsInfoLabel">
                                               Employer
                                             </label>
                                             <br />
                                             <input
-                                              className='detailsInfoInput'
-                                              type='text'
+                                              className="detailsInfoInput"
+                                              type="text"
                                               value={employment.employer}
                                               onChange={(e) =>
                                                 updateEmploymentField(
@@ -1487,14 +1487,14 @@ export default function CreateLive() {
                                             />
                                           </div>
 
-                                          <div className='col-md-3'>
-                                            <label className='detailsInfoLabel'>
+                                          <div className="col-md-3">
+                                            <label className="detailsInfoLabel">
                                               Start Date
                                             </label>
                                             <br />
                                             <input
-                                              className='detailsInfoInput'
-                                              type='date'
+                                              className="detailsInfoInput"
+                                              type="date"
                                               value={employment.startDate}
                                               style={{
                                                 "font-size": "12px",
@@ -1511,14 +1511,14 @@ export default function CreateLive() {
                                             />
                                           </div>
 
-                                          <div className='col-md-3'>
-                                            <label className='detailsInfoLabel'>
+                                          <div className="col-md-3">
+                                            <label className="detailsInfoLabel">
                                               End Date
                                             </label>
                                             <br />
                                             <input
-                                              className='detailsInfoInput'
-                                              type='date'
+                                              className="detailsInfoInput"
+                                              type="date"
                                               style={{
                                                 "font-size": "12px",
                                                 height: "38px",
@@ -1535,14 +1535,14 @@ export default function CreateLive() {
                                             />
                                           </div>
 
-                                          <div className='col-md-6'>
-                                            <label className='detailsInfoLabel cityLabelForm'>
+                                          <div className="col-md-6">
+                                            <label className="detailsInfoLabel cityLabelForm">
                                               City
                                             </label>
                                             <br />
                                             <input
-                                              className='detailsInfoInput'
-                                              type='text'
+                                              className="detailsInfoInput"
+                                              type="text"
                                               value={employment.city}
                                               onChange={(e) =>
                                                 updateEmploymentField(
@@ -1555,11 +1555,11 @@ export default function CreateLive() {
                                           </div>
                                         </div>
 
-                                        <label className='detailsInfoLabel'>
+                                        <label className="detailsInfoLabel">
                                           Description:
                                         </label>
 
-                                        <p className='detailsSubText'>
+                                        <p className="detailsSubText">
                                           Provide an overview of your job duties
                                           and responsibilities in your previous
                                           position.This would help us gain a
@@ -1575,19 +1575,19 @@ export default function CreateLive() {
                                               e.target.value
                                             )
                                           }
-                                          rows='6 '
-                                          cols='76'
-                                          placeholder='Eg: I was provided with a range of responsibilities to levarage the digital landscape for brand promotion and lead generation.'
-                                          className='detailsTextarea'
+                                          rows="6 "
+                                          cols="76"
+                                          placeholder="Eg: I was provided with a range of responsibilities to levarage the digital landscape for brand promotion and lead generation."
+                                          className="detailsTextarea"
                                         />
                                         <br />
 
                                         <button
-                                          type='button'
+                                          type="button"
                                           onClick={() =>
                                             removeEmploymentHistory(index)
                                           }
-                                          className='DeleteEmp'
+                                          className="DeleteEmp"
                                         >
                                           <Trash3Fill size={20} />
                                         </button>
@@ -1595,9 +1595,9 @@ export default function CreateLive() {
                                     )
                                   )}
                                 <button
-                                  type='button'
+                                  type="button"
                                   onClick={addEmploymentHistory}
-                                  className='Sec1additionalDetails'
+                                  className="Sec1additionalDetails"
                                 >
                                   <PlusLg size={20} /> Add One More Employment
                                 </button>
@@ -1606,61 +1606,61 @@ export default function CreateLive() {
                           </div>
                         </div>
 
-                        <h5 className='formSection'>
-                          <JournalCheck color='#35b276' size={26} />{" "}
+                        <h5 className="formSection">
+                          <JournalCheck color="#027AC0" size={26} />{" "}
                           &nbsp;Education
                         </h5>
-                        <p className='detailsSubText'>
+                        <p className="detailsSubText">
                           Share your educational journey,spanning your academic
                           achievements and qualifications, making you an
                           appealing candidate to potential employers.{" "}
                         </p>
 
                         <div
-                          class='accordion myAccordian'
-                          id='accordionExample3'
+                          class="accordion myAccordian"
+                          id="accordionExample3"
                         >
-                          <div class='accordion-item'>
-                            <h2 class='accordion-header'>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
                               <button
-                                class='accordion-button collapsed'
-                                type='button'
-                                data-bs-toggle='collapse'
-                                data-bs-target='#collapseThree'
-                                aria-expanded='false'
-                                aria-controls='collapseThree'
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree"
+                                aria-expanded="false"
+                                aria-controls="collapseThree"
                               >
                                 Add Education
                               </button>
                             </h2>
                             <div
-                              id='collapseThree'
-                              class='accordion-collapse collapse show'
-                              data-bs-parent='#accordionExample3'
+                              id="collapseThree"
+                              class="accordion-collapse collapse show"
+                              data-bs-parent="#accordionExample3"
                             >
-                              <div class='accordion-body'>
+                              <div class="accordion-body">
                                 {personalData.educationHistory !== undefined &&
                                   personalData.educationHistory.length > 0 &&
                                   personalData.educationHistory.map(
                                     (education, index) => (
                                       <div
                                         key={index}
-                                        className='employmentHistoryDiv'
+                                        className="employmentHistoryDiv"
                                       >
-                                        <h5 className='personalSubSubHeading'>
+                                        <h5 className="personalSubSubHeading">
                                           Formal Education {index + 1} :
                                         </h5>
-                                        <div className='row'>
+                                        <div className="row">
                                           {index > 0 && (
                                             <button
-                                              type='button'
+                                              type="button"
                                               onClick={() =>
                                                 moveEducation(index, index - 1)
                                               }
-                                              className='moveBtnCreateUp'
+                                              className="moveBtnCreateUp"
                                             >
                                               <CaretUpSquareFill
-                                                color='#35b276'
+                                                color="#027AC0"
                                                 size={16}
                                               />
                                             </button>
@@ -1670,26 +1670,26 @@ export default function CreateLive() {
                                               .length -
                                               1 && (
                                             <button
-                                              type='button'
+                                              type="button"
                                               onClick={() =>
                                                 moveEducation(index, index + 1)
                                               }
-                                              className='moveBtnCreateDown'
+                                              className="moveBtnCreateDown"
                                             >
                                               <CaretDownSquareFill
-                                                color='#35b276'
+                                                color="#027AC0"
                                                 size={16}
                                               />
                                             </button>
                                           )}
-                                          <div className='col-md-6'>
-                                            <label className='detailsInfoLabel'>
+                                          <div className="col-md-6">
+                                            <label className="detailsInfoLabel">
                                               School:
                                             </label>
                                             <br />
                                             <input
-                                              className='detailsInfoInput'
-                                              type='text'
+                                              className="detailsInfoInput"
+                                              type="text"
                                               value={education.school}
                                               onChange={(e) =>
                                                 updateEducationField(
@@ -1701,14 +1701,14 @@ export default function CreateLive() {
                                             />
                                           </div>
 
-                                          <div className='col-md-6'>
-                                            <label className='detailsInfoLabel'>
+                                          <div className="col-md-6">
+                                            <label className="detailsInfoLabel">
                                               Degree:
                                             </label>
                                             <br />
                                             <input
-                                              className='detailsInfoInput'
-                                              type='text'
+                                              className="detailsInfoInput"
+                                              type="text"
                                               value={education.degree}
                                               onChange={(e) =>
                                                 updateEducationField(
@@ -1720,13 +1720,13 @@ export default function CreateLive() {
                                             />
                                           </div>
 
-                                          <div className='col-md-3'>
-                                            <label className='detailsInfoLabel'>
+                                          <div className="col-md-3">
+                                            <label className="detailsInfoLabel">
                                               Start Date:
                                             </label>
                                             <input
-                                              className='detailsInfoInput'
-                                              type='date'
+                                              className="detailsInfoInput"
+                                              type="date"
                                               value={education.startDate}
                                               style={{
                                                 "font-size": "12px",
@@ -1743,13 +1743,13 @@ export default function CreateLive() {
                                             />
                                           </div>
 
-                                          <div className='col-md-3'>
-                                            <label className='detailsInfoLabel'>
+                                          <div className="col-md-3">
+                                            <label className="detailsInfoLabel">
                                               End Date:
                                             </label>
                                             <input
-                                              className='detailsInfoInput'
-                                              type='date'
+                                              className="detailsInfoInput"
+                                              type="date"
                                               value={education.endDate}
                                               style={{
                                                 "font-size": "12px",
@@ -1766,13 +1766,13 @@ export default function CreateLive() {
                                             />
                                           </div>
 
-                                          <div className='col-md-6'>
-                                            <label className='detailsInfoLabel cityLabelForm'>
+                                          <div className="col-md-6">
+                                            <label className="detailsInfoLabel cityLabelForm">
                                               City:
                                             </label>
                                             <input
-                                              className='detailsInfoInput'
-                                              type='text'
+                                              className="detailsInfoInput"
+                                              type="text"
                                               value={education.city}
                                               onChange={(e) =>
                                                 updateEducationField(
@@ -1785,10 +1785,10 @@ export default function CreateLive() {
                                           </div>
                                         </div>
 
-                                        <label className='detailsInfoLabel'>
+                                        <label className="detailsInfoLabel">
                                           Description:
                                         </label>
-                                        <p className='detailsSubText'>
+                                        <p className="detailsSubText">
                                           Provide an overview of your job duties
                                           and responsibilities in your previous
                                           position.This would help us gain a
@@ -1804,19 +1804,19 @@ export default function CreateLive() {
                                               e.target.value
                                             )
                                           }
-                                          rows='6 '
-                                          cols='76'
-                                          placeholder='Eg: Achieved excellence in academics by consistently maintaining a top-ranking position throughout high school. Actively participated in various academic competitions and excelled in subject-specific contests. Received recognition for outstanding performance in science fairs and mathematics Olympiads.'
-                                          className='detailsTextarea'
+                                          rows="6 "
+                                          cols="76"
+                                          placeholder="Eg: Achieved excellence in academics by consistently maintaining a top-ranking position throughout high school. Actively participated in various academic competitions and excelled in subject-specific contests. Received recognition for outstanding performance in science fairs and mathematics Olympiads."
+                                          className="detailsTextarea"
                                         />
                                         <br />
 
                                         <button
-                                          type='button'
+                                          type="button"
                                           onClick={() =>
                                             removeEducationHistory(index)
                                           }
-                                          className='DeleteEmp'
+                                          className="DeleteEmp"
                                         >
                                           <Trash3Fill size={20} />
                                         </button>
@@ -1825,9 +1825,9 @@ export default function CreateLive() {
                                   )}
 
                                 <button
-                                  type='button'
+                                  type="button"
                                   onClick={addEducationHistory}
-                                  className='Sec1additionalDetails'
+                                  className="Sec1additionalDetails"
                                 >
                                   <PlusLg size={20} /> Add One More Education
                                 </button>
@@ -1837,11 +1837,11 @@ export default function CreateLive() {
                         </div>
                         {/* ************************************************************** */}
 
-                        <h5 className='formSection'>
-                          <Link45deg color='#35b276' size={26} /> &nbsp;Websites
+                        <h5 className="formSection">
+                          <Link45deg color="#027AC0" size={26} /> &nbsp;Websites
                           and Links
                         </h5>
-                        <p className='detailsSubText'>
+                        <p className="detailsSubText">
                           Elevate your resume with real-world examples of your
                           work. You can include Personal-websites,
                           portfolios,and project repositories to demonstrate
@@ -1849,53 +1849,53 @@ export default function CreateLive() {
                         </p>
 
                         <div
-                          class='accordion myAccordian'
-                          id='accordionExample3'
+                          class="accordion myAccordian"
+                          id="accordionExample3"
                         >
-                          <div class='accordion-item'>
-                            <h2 class='accordion-header'>
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
                               <button
-                                class='accordion-button collapsed'
-                                type='button'
-                                data-bs-toggle='collapse'
-                                data-bs-target='#collapseThree'
-                                aria-expanded='false'
-                                aria-controls='collapseThree'
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree"
+                                aria-expanded="false"
+                                aria-controls="collapseThree"
                               >
                                 Add Websites
                               </button>
                             </h2>
                             <div
-                              id='collapseThree'
-                              class='accordion-collapse collapse show'
-                              data-bs-parent='#accordionExample3'
+                              id="collapseThree"
+                              class="accordion-collapse collapse show"
+                              data-bs-parent="#accordionExample3"
                             >
-                              <div class='accordion-body'>
+                              <div class="accordion-body">
                                 {personalData.websitesAndLinks !== undefined &&
                                   personalData.websitesAndLinks.length > 0 &&
                                   personalData.websitesAndLinks.map(
                                     (websites, index) => (
                                       <div
                                         key={index}
-                                        className='employmentHistoryDiv'
+                                        className="employmentHistoryDiv"
                                       >
-                                        <h5 className='personalSubSubHeading'>
+                                        <h5 className="personalSubSubHeading">
                                           Site {index + 1} :
                                         </h5>
-                                        <div className='row'>
+                                        <div className="row">
                                           {index > 0 && (
                                             <button
-                                              type='button'
+                                              type="button"
                                               onClick={() =>
                                                 moveWebsiteLink(
                                                   index,
                                                   index - 1
                                                 )
                                               }
-                                              className='moveBtnCreateUp '
+                                              className="moveBtnCreateUp "
                                             >
                                               <CaretUpSquareFill
-                                                color='#35b276'
+                                                color="#027AC0"
                                                 size={14}
                                               />
                                             </button>
@@ -1905,29 +1905,29 @@ export default function CreateLive() {
                                               .length -
                                               1 && (
                                             <button
-                                              type='button'
+                                              type="button"
                                               onClick={() =>
                                                 moveWebsiteLink(
                                                   index,
                                                   index + 1
                                                 )
                                               }
-                                              className='moveBtnCreateDown moveBtnCreateNotLiveDown'
+                                              className="moveBtnCreateDown moveBtnCreateNotLiveDown"
                                             >
                                               <CaretDownSquareFill
-                                                color='#35b276'
+                                                color="#027AC0"
                                                 size={14}
                                               />
                                             </button>
                                           )}
-                                          <div className='col-md-6'>
-                                            <label className='detailsInfoLabel'>
+                                          <div className="col-md-6">
+                                            <label className="detailsInfoLabel">
                                               Name :
                                             </label>
                                             <br />
                                             <input
-                                              className='detailsInfoInput'
-                                              type='text'
+                                              className="detailsInfoInput"
+                                              type="text"
                                               value={websites.name}
                                               onChange={(e) =>
                                                 updateWebsiteLinkField(
@@ -1939,14 +1939,14 @@ export default function CreateLive() {
                                             />
                                           </div>
 
-                                          <div className='col-md-6'>
-                                            <label className='detailsInfoLabel'>
+                                          <div className="col-md-6">
+                                            <label className="detailsInfoLabel">
                                               Url:
                                             </label>
                                             <br />
                                             <input
-                                              className='detailsInfoInput'
-                                              type='text'
+                                              className="detailsInfoInput"
+                                              type="text"
                                               value={websites.url}
                                               onChange={(e) =>
                                                 updateWebsiteLinkField(
@@ -1959,11 +1959,11 @@ export default function CreateLive() {
                                           </div>
                                         </div>
                                         <button
-                                          type='button'
+                                          type="button"
                                           onClick={() =>
                                             removeWebsiteLink(index)
                                           }
-                                          className='DeleteEmp'
+                                          className="DeleteEmp"
                                         >
                                           <Trash3Fill size={20} />
                                         </button>
@@ -1972,9 +1972,9 @@ export default function CreateLive() {
                                   )}
 
                                 <button
-                                  type='button'
+                                  type="button"
                                   onClick={addWebsiteLink}
-                                  className='Sec1additionalDetails'
+                                  className="Sec1additionalDetails"
                                 >
                                   <PlusLg size={20} /> Add Website
                                 </button>
@@ -1983,46 +1983,46 @@ export default function CreateLive() {
                           </div>
                         </div>
                         {/* ************************************************************************************** */}
-                        <div className='skillsSection'>
-                          <h5 className='formSection'>
-                            <TrophyFill color='#35b276' size={24} /> &nbsp; Add
+                        <div className="skillsSection">
+                          <h5 className="formSection">
+                            <TrophyFill color="#027AC0" size={24} /> &nbsp; Add
                             your Skills
                           </h5>
-                          <p className='detailsSubText'>
+                          <p className="detailsSubText">
                             Highlight your core strengths and expertise. Create
                             and add skills that best suit your position and
                             represent your capabilities, enhancing your resume.
                           </p>
                           <div>
                             <input
-                              className='detailsInfoInput createLiveSearchDetailsInfoInput'
-                              type='text'
-                              placeholder='Add a skill...'
+                              className="detailsInfoInput createLiveSearchDetailsInfoInput"
+                              type="text"
+                              placeholder="Add a skill..."
                               value={options}
                               onChange={(e) => setOptions(e.target.value)}
                             />
                             <button
-                              type='button'
+                              type="button"
                               onClick={handleAddSkill}
-                              className='addSkillBtn zoom'
+                              className="addSkillBtn zoom"
                             >
                               <PlusCircleFill /> &nbsp;Add Skill
                             </button>
                           </div>
                           <div>
-                            <h6 className='formSection SkillsadditionalDetails'>
+                            <h6 className="formSection SkillsadditionalDetails">
                               Selected Skills:
                             </h6>
                             {selectedOptions.map((skill, index) => (
                               <div
                                 key={index}
-                                className='selected-option selectedOption'
+                                className="selected-option selectedOption"
                               >
                                 {skill}
                                 <button
-                                  type='button'
+                                  type="button"
                                   onClick={() => handleRemoveSkill(skill)}
-                                  className='DeleteSkill'
+                                  className="DeleteSkill"
                                 >
                                   <Trash3Fill size={16} />
                                 </button>
@@ -2032,7 +2032,7 @@ export default function CreateLive() {
                         </div>
 
                         {/* <div className='skillsSection'>
-                                        <h5 className='formSection'><TrophyFill color="#35b276" size={24} /> &nbsp;Add your Skills</h5>
+                                        <h5 className='formSection'><TrophyFill color="#027AC0" size={24} /> &nbsp;Add your Skills</h5>
                                         <p className='detailsSubText'> Highlight your core strengths and expertise. Select up to 6 key skills that best suit your the position you want to apply to and represent your capabilities, enhancing your resume.</p>
                                         <div>
                                             <input
@@ -2086,10 +2086,10 @@ export default function CreateLive() {
                           setCustomSections={setCustomSections}
                           liveForm={"true"}
                         />
-                        <div className='createSaveProfileDiv'>
+                        <div className="createSaveProfileDiv">
                           <button
-                            type='submit'
-                            className='saveProfileBtn createLiveSaveProfileBtn'
+                            type="submit"
+                            className="saveProfileBtn createLiveSaveProfileBtn"
                           >
                             <Check2Circle size={26} />
                             &nbsp;&nbsp;&nbsp;Create My Resume
@@ -2100,7 +2100,7 @@ export default function CreateLive() {
                   </div>
                 </div>
                 <div
-                  className='rightDivCreateLive'
+                  className="rightDivCreateLive"
                   style={{
                     flex: 1,
                     position: "fixed",
@@ -2110,8 +2110,8 @@ export default function CreateLive() {
                     paddingTop: "5%",
                   }}
                 >
-                  <div className='  createRightDiv'>
-                    <div className='pdfDisplayDiv'>
+                  <div className="  createRightDiv">
+                    <div className="pdfDisplayDiv">
                       {selectedTemplateId == 1 && (
                         <MyPdfViewer1
                           personalData={personalData}

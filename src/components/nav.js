@@ -13,11 +13,11 @@ export default function Nav() {
 
   return (
     <div>
-      <nav class='navbar bg-body-tertiary myNav'>
-        <div class='container-fluid'>
-          <a class='navbar-brand mb-0 h1 navText' href='#'>
+      <nav class="navbar bg-body-tertiary myNav">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 navText" href="#">
             &nbsp; &nbsp;
-            <img src={img3} class='logoImg' />
+            <img src={img3} class="logoImg" />
             &nbsp; &nbsp;
             <strong onClick={redirectHome}>RESUME SHAPER</strong>
           </a>

@@ -2,7 +2,7 @@ import react, { useEffect, useState, useRef } from "react";
 import Nav from "../components/nav";
 import "../styleSheet/Landing.css";
 import img1 from "../images/resume.png";
-import img2 from "../images/sec2.jpg";
+import img2 from "../images/Img - resume charts on color.png";
 import img3 from "../images/6.png";
 import img4 from "../images/7.png";
 import img5 from "../images/8.png";
@@ -18,6 +18,12 @@ import img14 from "../images/21.png";
 import img15 from "../images/22.png";
 import img16 from "../images/23.png";
 import img17 from "../images/24.png";
+import FeaturesImg1 from "../images/feature-img1.png";
+import FeaturesImg2 from "../images/feature-img2.png";
+import FeaturesImg3 from "../images/feature-img3.png";
+import FeaturesImg4 from "../images/feature-img4.png";
+import FeaturesImg5 from "../images/feature-img5.png";
+import FeaturesImg6 from "../images/feature-img6.png";
 import vid from "../images/video1.mp4";
 import ReactPlayer from "react-player";
 import Footer from "../components/footer";
@@ -32,6 +38,7 @@ import { auth, getUserFromDatabase } from "../fireabse";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useSelector } from "react-redux";
+import { Link } from "react-scroll";
 
 export default function Landing() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -105,7 +112,6 @@ export default function Landing() {
               Login
             </button>
           )}
-          
 
           {isPopupOpen && (
             <LoginPopup onClose={togglePopup} onSignup={handleSignup} />
@@ -132,11 +138,15 @@ export default function Landing() {
             </div>
             <button
               type="button"
-              class="btn btn-success  ctaBtn zoom "
+              class="btn  ctaBtn zoom "
               onClick={togglePopup}
             >
               Start Now
             </button>
+
+            <Link to="section3" type="button" class="btn ctaBtn-2 zoom ">
+              See demo video
+            </Link>
           </div>
           <div className=" smallScreenDiv ">
             {/* <img src={img17} className='jumboImg' /> */}
@@ -163,7 +173,7 @@ export default function Landing() {
             <div className="sec1Right ">
               <div className="sec1Text">
                 <h5 className="sec1RightText ">
-                  <Check2Circle color="#35b276" size={36} /> &nbsp; Resume
+                  <Check2Circle color="#027AC0" size={36} /> &nbsp; Resume
                   Customization
                 </h5>
                 <p className="sec1PText">
@@ -171,7 +181,7 @@ export default function Landing() {
                   skills and qualifications to stand out.
                 </p>
                 <h5 className="sec1RightText">
-                  <Check2Circle color="#35b276" size={36} /> &nbsp; ATS
+                  <Check2Circle color="#027AC0" size={36} /> &nbsp; ATS
                   Compatibility
                 </h5>
                 <p className="sec1PText">
@@ -180,7 +190,7 @@ export default function Landing() {
                   employers.{" "}
                 </p>
                 <h5 className="sec1RightText">
-                  <Check2Circle color="#35b276" size={36} /> &nbsp; Professional
+                  <Check2Circle color="#027AC0" size={36} /> &nbsp; Professional
                   Presentation
                 </h5>
                 <p className="sec1PText">
@@ -189,7 +199,7 @@ export default function Landing() {
                   hiring managers.{" "}
                 </p>
                 <h5 className="sec1RightText">
-                  <Check2Circle color="#35b276" size={36} /> &nbsp; Saves Time
+                  <Check2Circle color="#027AC0" size={36} /> &nbsp; Saves Time
                 </h5>
                 <p className="sec1PText">
                   Streamline the resume customization process,saving you
@@ -200,92 +210,226 @@ export default function Landing() {
             </div>
           </div>
 
-          <div className="section2">
-            <h3 className="section1Heading">How it Works</h3>
-            <div className="row">
-              <div className="col-md-4  sec2Col sec2Col1">
-                <img src={img3} className="sec2Img zoom" />
-                <h5>Upload your Resume</h5>
-                <p>
-                  Start by uploading your current resume,the foundation for your
-                  tailored application.
-                </p>
-              </div>
-              <div className="col-md-4  sec2Col sec2Col2 ">
-                <img src={img4} className="sec2Img zoom" />
-                <h5>Specify Job Title & Company</h5>
-                <p>
-                  Tell us the job title and company you're targeting. Critical
-                  for effective customization.
-                </p>
-              </div>
-              <div className="col-md-4  sec2Col sec2Col3 ">
-                <img src={img5} className="sec2Img zoom" />
-                <h5>Tailored for Success</h5>
-                <p>
-                  Watch as we transform your resume to align with your desired
-                  position and instantly download it for applications.
-                </p>
+          {/* section -2 */}
+
+          <div className="section2 custom-background p-5">
+            <h3 className="section1Heading ">How it Works</h3>
+            <div className="container">
+              <div className="row d-flex justify-content-center ">
+                <div
+                  className="d-flex flex-column flex-wrap p-4 card gap-4 m-2 justify-content-around"
+                  style={{ width: "26rem" }}
+                >
+                  <div className="  card-number ">1</div>
+                  <h3>Upload your Resume</h3>
+                  <p>
+                    Start by uploading your current resume, the foundation for
+                    your tailored application.
+                  </p>
+                </div>
+
+                <div
+                  className="d-flex flex-column flex-wrap p-4 card gap-4 m-2 justify-content-around"
+                  style={{ width: "26rem" }}
+                >
+                  <div className=" card card-number ">2</div>
+                  <h3>Specify Job Title & Company</h3>
+                  <p>
+                    Tell us the job title and company you're targeting. Critical
+                    for effective customization.
+                  </p>
+                </div>
+
+                <div
+                  className="d-flex flex-column flex-wrap p-4 card gap-4 m-2 justify-content-around"
+                  style={{ width: "26rem" }}
+                >
+                  <div className=" card card-number ">3</div>
+                  <h3>Tailored for Success</h3>
+                  <p>
+                    Watch as we transform your resume to align with your desired
+                    position and instantly download it for applications.
+                  </p>
+                </div>
+
+                <div
+                  className="d-flex flex-column flex-wrap p-4 card gap-4 m-2 justify-content-around"
+                  style={{ width: "26rem" }}
+                >
+                  <div className=" card card-number ">4</div>
+                  <h3>Title</h3>
+                  <p>Description</p>
+                </div>
+
+                <div
+                  className="d-flex flex-column flex-wrap p-4 card gap-4 m-2 justify-content-around"
+                  style={{ width: "26rem" }}
+                >
+                  <div className=" card card-number ">5</div>
+                  <h3>Title</h3>
+                  <p>Description</p>
+                </div>
               </div>
             </div>
           </div>
 
-          <button
-            type="button"
-            onClick={togglePopup}
-            class="btn btn-success ctaBtnSec2 zoom"
-          >
-            Start Now
-          </button>
+          {/* section 3 */}
+          <div className="section3 text-center">
+            <h3 className="section1Heading reviewHeading">Demo Video</h3>
+            <div className="col-md-6 mx-auto sec4MidDiv1 p-4 h-100">
+              <ReactPlayer
+                className="player p-2"
+                url="https://www.youtube.com/watch?v=Kn5M2Cg_DFM&t=8s"
+                width="100%"
+                playing={true}
+                muted={true} // Set to false for not muted by default
+                autoplay={true}
+                repeat={true}
+                controls={true} // Add controls for user interaction
+                onEnded={handleSampleVidEnded}
+                ref={playerRefSampleVid}
+              />
+              <button
+                type="button"
+                onClick={togglePopup}
+                class="btn  ctaBtnSec2 zoom"
+              >
+                Start Now
+              </button>
+            </div>
+          </div>
 
+          {/* section - 4  */}
           <div className="section4">
-            <div className="videoSection row">
-              <div className="col-md-6 sec4MidDiv1 ">
-                <ReactPlayer
-                  className="player"
-                  url="https://www.youtube.com/watch?v=Kn5M2Cg_DFM&t=8s"
-                  width="100%"
-                  height="142%"
-                  playing={true}
-                  muted={true} // Set to false for not muted by default
-                  autoplay={true}
-                  repeat={true}
-                  controls={true} // Add controls for user interaction
-                  onEnded={handleSampleVidEnded}
-                  ref={playerRefSampleVid}
-                />
-              </div>
-              <div className="col-md-6 sec4MidDiv2">
-                <h4>Our Features</h4>
-                <p>
-                  <Check2Circle color="#35b276" size={20} /> &nbsp;Create
-                  Tailored resumes for specific job applications.
-                </p>
-                <p>
-                  <Check2Circle color="#35b276" size={19} /> &nbsp;Ensure resume
-                  pass through ATS for better visibility.{" "}
-                </p>
-                <p>
-                  <Check2Circle color="#35b276" size={19} /> &nbsp;Enhance
-                  resumes with professional formatting.
-                </p>
-                <p>
-                  <Check2Circle color="#35b276" size={19} /> &nbsp;Receive
-                  keyword suggestions for better targeting.
-                </p>
-                <p>
-                  <Check2Circle color="#35b276" size={19} /> &nbsp;Download
-                  customized resumes instanly for multiple job applications.
-                </p>
-                <p>
-                  <Check2Circle color="#35b276" size={19} /> &nbsp;Get help from
-                  our dedicated support team when you need it.
-                </p>
+            <h3 className="section1Heading ">Our Features</h3>
+            <div className="container">
+              <div className="row">
+                <div className="cpl-sm-12 d-flex flex-wrap justify-content-center gap-4">
+                  <div
+                    className="card p-4  custom-background mb-5 mt-5"
+                    style={{ width: "26rem" }}
+                  >
+                    <div className="card-body">
+                      <h4 className="card-text mb-5">
+                        Create{" "}
+                        <span className="text-background">
+                          Tailored resumes
+                        </span>{" "}
+                        for specific job applications.
+                      </h4>
+                    </div>
+                    <img
+                      src={FeaturesImg1}
+                      className="card-img-top rounded-3"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div
+                    className="card p-4  custom-background mb-5 mt-5"
+                    style={{ width: "26rem" }}
+                  >
+                    <div className="card-body">
+                      <h4 className="card-text mb-5">
+                        Ensure resume pass through{" "}
+                        <span className="text-background">
+                          Tailored resumes
+                        </span>{" "}
+                        ATS
+                      </h4>
+                    </div>
+                    <img
+                      src={FeaturesImg2}
+                      className="card-img-top rounded-3"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div
+                    className="card p-4  custom-background mb-5 mt-5"
+                    style={{ width: "26rem" }}
+                  >
+                    <div className="card-body">
+                      <h4 className="card-text mb-5">
+                        Enhance resumes with{" "}
+                        <span className="text-background">
+                          professional formatting.
+                        </span>{" "}
+                      </h4>
+                    </div>
+                    <img
+                      src={FeaturesImg3}
+                      className="card-img-top rounded-3"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div
+                    className="card p-4  custom-background mb-5 mt-5"
+                    style={{ width: "26rem" }}
+                  >
+                    <div className="card-body">
+                      <h4 className="card-text mb-5">
+                        Receive{" "}
+                        <span className="text-background">
+                          keyword suggestions
+                        </span>{" "}
+                        for better targeting.
+                      </h4>
+                    </div>
+                    <img
+                      src={FeaturesImg4}
+                      className="card-img-top rounded-3"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div
+                    className="card p-4  custom-background mb-5 mt-5"
+                    style={{ width: "26rem" }}
+                  >
+                    <div className="card-body">
+                      <h4 className="card-text mb-5">
+                        Download{" "}
+                        <span className="text-background">
+                          customized resumes
+                        </span>{" "}
+                        instanly for multiple job applications.
+                      </h4>
+                    </div>
+                    <img
+                      src={FeaturesImg5}
+                      className="card-img-top rounded-3"
+                      alt="..."
+                    />
+                  </div>
+
+                  <div
+                    className="card p-4  custom-background mb-5 mt-5"
+                    style={{ width: "26rem" }}
+                  >
+                    <div className="card-body">
+                      <h4 className="card-text mb-5">
+                        Get help from our{" "}
+                        <span className="text-background">
+                          dedicated support team
+                        </span>{" "}
+                        when you need it.
+                      </h4>
+                    </div>
+                    <img
+                      src={FeaturesImg6}
+                      className="card-img-top rounded-3"
+                      alt="..."
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="section3">
+          {/* section - 5 */}
+          <div className="section5">
             <h3 className="section1Heading reviewHeading">
               Rave Reviews Form Our Users
             </h3>
@@ -306,8 +450,8 @@ export default function Landing() {
                         />
                         <div class="card-body ">
                           <BookmarkStarFill size={46} className="star" />
-                          <h5 class="card-title">Michal R.</h5>
-                          <p class="card-text">
+                          <h5 class="card-title ">Michal R.</h5>
+                          <p class="card-text text-black-50">
                             <i>
                               "The ATS optimization was a game changer. I
                               received more interview calls in a month than I
@@ -432,6 +576,7 @@ export default function Landing() {
                 </div>
               </div>
               <button
+                style={{ backgroundColor: "#2aacea" }}
                 class="carousel-control-prev landing-carousel-control-prev"
                 type="button"
                 data-bs-target="#carouselExampleRide"
@@ -444,6 +589,7 @@ export default function Landing() {
                 <span class="visually-hidden">Previous</span>
               </button>
               <button
+                style={{ backgroundColor: "#2aacea" }}
                 class="carousel-control-next landing-carousel-control-next"
                 type="button"
                 data-bs-target="#carouselExampleRide"
@@ -460,6 +606,7 @@ export default function Landing() {
           <Footer />
         </div>
       )}
-    </>
-  );
+          
+    </>
+  );
 }

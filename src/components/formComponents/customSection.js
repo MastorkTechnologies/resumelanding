@@ -178,24 +178,24 @@ export default function CustomSection({
 
   return (
     //Add courses if any
-    <div className='customSecDiv '>
+    <div className="customSecDiv ">
       <div ref={courseRef}>
         {courses.map((course, index) => (
-          <div key={index} className='employmentHistoryDiv'>
-            <h5 className='personalSubSubHeading'>
-              <JournalRichtext color='#35b276' size={26} /> &nbsp;&nbsp;Course{" "}
+          <div key={index} className="employmentHistoryDiv">
+            <h5 className="personalSubSubHeading">
+              <JournalRichtext color="#027AC0" size={26} /> &nbsp;&nbsp;Course{" "}
               {index + 1} :
             </h5>
 
-            <div className='row'>
-              <div className='col-md-6 '>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+            <div className="row">
+              <div className="col-md-6 ">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Course:
                 </label>
                 <input
-                  type='text'
+                  type="text"
                   value={course.course}
-                  className='detailsInfoInput'
+                  className="detailsInfoInput"
                   onChange={(e) => {
                     const updatedCourses = [...courses];
                     updatedCourses[index].course = e.target.value;
@@ -204,14 +204,14 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Institution:
                 </label>
                 <input
-                  type='text'
+                  type="text"
                   value={course.institution}
-                  className='detailsInfoInput'
+                  className="detailsInfoInput"
                   onChange={(e) => {
                     const updatedCourses = [...courses];
                     updatedCourses[index].institution = e.target.value;
@@ -220,14 +220,14 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Start Date:
                 </label>
                 <input
-                  type='date'
+                  type="date"
                   value={course.startDate}
-                  className='detailsInfoInput'
+                  className="detailsInfoInput"
                   onChange={(e) => {
                     const updatedCourses = [...courses];
                     updatedCourses[index].startDate = e.target.value;
@@ -236,13 +236,13 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   End Date:
                 </label>
                 <input
-                  type='date'
-                  className='detailsInfoInput'
+                  type="date"
+                  className="detailsInfoInput"
                   value={course.endDate}
                   onChange={(e) => {
                     const updatedCourses = [...courses];
@@ -253,7 +253,7 @@ export default function CustomSection({
               </div>
             </div>
 
-            <label className='detailsInfoLabel customSecdetailsInfoLabel courseDescription'>
+            <label className="detailsInfoLabel customSecdetailsInfoLabel courseDescription">
               Description:
             </label>
             <textarea
@@ -263,16 +263,16 @@ export default function CustomSection({
                 updatedCourses[index].description = e.target.value;
                 setCourses(updatedCourses);
               }}
-              rows='6 '
-              cols='80'
-              placeholder='Eg: Successfully completed a Prompt Engineering course, gaining valuable insights into crafting impactful prompts for AI-generated content. Acquired skills in prompt design, refinement, and collaboration with cross-functional teams..'
-              className='detailsTextarea'
+              rows="6 "
+              cols="80"
+              placeholder="Eg: Successfully completed a Prompt Engineering course, gaining valuable insights into crafting impactful prompts for AI-generated content. Acquired skills in prompt design, refinement, and collaboration with cross-functional teams.."
+              className="detailsTextarea"
             />
             <br />
             <button
-              type='button'
+              type="button"
               onClick={(e) => removeCourse(index, e)}
-              className='DeleteEmp'
+              className="DeleteEmp"
             >
               <Trash3Fill size={20} />
             </button>
@@ -283,19 +283,19 @@ export default function CustomSection({
       {/* Add extra curricular activities if any */}
       <div ref={activityRef}>
         {activities.map((activity, index) => (
-          <div key={index} className='employmentHistoryDiv'>
-            <h5 className='personalSubSubHeading'>
-              <BagFill color='#35b276' size={24} /> &nbsp;&nbsp;Extra Curricular
+          <div key={index} className="employmentHistoryDiv">
+            <h5 className="personalSubSubHeading">
+              <BagFill color="#027AC0" size={24} /> &nbsp;&nbsp;Extra Curricular
               Activity {index + 1} :
             </h5>
-            <div className='row'>
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+            <div className="row">
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Function
                 </label>
                 <input
-                  type='text'
-                  className='detailsInfoInput'
+                  type="text"
+                  className="detailsInfoInput"
                   value={activity.function}
                   onChange={(e) => {
                     const updatedActivities = [...activities];
@@ -305,13 +305,13 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Employer
                 </label>
                 <input
-                  type='text'
-                  className='detailsInfoInput'
+                  type="text"
+                  className="detailsInfoInput"
                   value={activity.employer}
                   onChange={(e) => {
                     const updatedActivities = [...activities];
@@ -321,14 +321,14 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-3'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-3">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Start Date
                 </label>
                 <input
-                  type='date'
+                  type="date"
                   style={{ "font-size": "12px", height: "38px" }}
-                  className='detailsInfoInput'
+                  className="detailsInfoInput"
                   value={activity.startDate}
                   onChange={(e) => {
                     const updatedActivities = [...activities];
@@ -338,13 +338,13 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-3'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-3">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   End Date
                 </label>
                 <input
-                  type='date'
-                  className='detailsInfoInput'
+                  type="date"
+                  className="detailsInfoInput"
                   value={activity.endDate}
                   style={{ "font-size": "12px", height: "38px" }}
                   onChange={(e) => {
@@ -355,13 +355,13 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   City:
                 </label>
                 <input
-                  type='text'
-                  className='detailsInfoInput'
+                  type="text"
+                  className="detailsInfoInput"
                   value={activity.city}
                   onChange={(e) => {
                     const updatedActivities = [...activities];
@@ -372,7 +372,7 @@ export default function CustomSection({
               </div>
             </div>
 
-            <label className='detailsInfoLabel customSecdetailsInfoLabel courseDescription'>
+            <label className="detailsInfoLabel customSecdetailsInfoLabel courseDescription">
               Description:
             </label>
             <textarea
@@ -382,16 +382,16 @@ export default function CustomSection({
                 updatedActivities[index].description = e.target.value;
                 setActivities(updatedActivities);
               }}
-              rows='6 '
-              cols='80'
-              placeholder='Eg: Engaged in impactful community service initiatives, contributing time and effort to support local causes. Developed a strong sense of social responsibility and teamwork while actively participating in various service projects. Learned to apply leadership and organizational skills to create positive change within the community.'
-              className='detailsTextarea '
+              rows="6 "
+              cols="80"
+              placeholder="Eg: Engaged in impactful community service initiatives, contributing time and effort to support local causes. Developed a strong sense of social responsibility and teamwork while actively participating in various service projects. Learned to apply leadership and organizational skills to create positive change within the community."
+              className="detailsTextarea "
             />
             <br />
             <button
-              type='button'
+              type="button"
               onClick={(e) => removeActivity(index, e)}
-              className='DeleteEmp'
+              className="DeleteEmp"
             >
               <Trash3Fill size={20} />
             </button>
@@ -402,19 +402,19 @@ export default function CustomSection({
       {/* Add internships if any */}
       <div ref={intershipRef}>
         {internships.map((internship, index) => (
-          <div key={index} className='employmentHistoryDiv'>
-            <h5 className='personalSubSubHeading'>
-              <GraphUpArrow color='#35b276' size={24} /> &nbsp;&nbsp;Internships{" "}
+          <div key={index} className="employmentHistoryDiv">
+            <h5 className="personalSubSubHeading">
+              <GraphUpArrow color="#027AC0" size={24} /> &nbsp;&nbsp;Internships{" "}
               {index + 1} :
             </h5>
-            <div className='row'>
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+            <div className="row">
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Job Title
                 </label>
                 <input
-                  className='detailsInfoInput'
-                  type='text'
+                  className="detailsInfoInput"
+                  type="text"
                   value={internship.jobTitle}
                   onChange={(e) => {
                     const updatedInternships = [...internships];
@@ -424,13 +424,13 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Employer
                 </label>
                 <input
-                  className='detailsInfoInput'
-                  type='text'
+                  className="detailsInfoInput"
+                  type="text"
                   value={internship.employer}
                   onChange={(e) => {
                     const updatedInternships = [...internships];
@@ -440,13 +440,13 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-3'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-3">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Start Date
                 </label>
                 <input
-                  className='detailsInfoInput'
-                  type='date'
+                  className="detailsInfoInput"
+                  type="date"
                   style={{ "font-size": "12px", height: "38px" }}
                   value={internship.startDate}
                   onChange={(e) => {
@@ -457,13 +457,13 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-3'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-3">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   End Date
                 </label>
                 <input
-                  className='detailsInfoInput'
-                  type='date'
+                  className="detailsInfoInput"
+                  type="date"
                   style={{ "font-size": "12px", height: "38px" }}
                   value={internship.endDate}
                   onChange={(e) => {
@@ -474,14 +474,14 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   City
                 </label>
                 <br />
                 <input
-                  className='detailsInfoInput'
-                  type='text'
+                  className="detailsInfoInput"
+                  type="text"
                   value={internship.city}
                   onChange={(e) => {
                     const updatedInternships = [...internships];
@@ -492,7 +492,7 @@ export default function CustomSection({
               </div>
             </div>
 
-            <label className='detailsInfoLabel customSecdetailsInfoLabel courseDescription'>
+            <label className="detailsInfoLabel customSecdetailsInfoLabel courseDescription">
               Description:
             </label>
             <textarea
@@ -502,16 +502,16 @@ export default function CustomSection({
                 updatedInternships[index].description = e.target.value;
                 setInternships(updatedInternships);
               }}
-              rows='6 '
-              cols='80'
-              placeholder='Eg: Interned in Prompt Engineering, where I leveraged technologies such as Python, Natural Language Processing (NLP), and machine learning to design and refine prompts for AI-generated content. Collaborated on projects involving innovative tools and frameworks, gaining hands-on experience in the intersection of technology and content creation.'
-              className='detailsTextarea '
+              rows="6 "
+              cols="80"
+              placeholder="Eg: Interned in Prompt Engineering, where I leveraged technologies such as Python, Natural Language Processing (NLP), and machine learning to design and refine prompts for AI-generated content. Collaborated on projects involving innovative tools and frameworks, gaining hands-on experience in the intersection of technology and content creation."
+              className="detailsTextarea "
             />
             <br />
             <button
-              type='button'
+              type="button"
               onClick={(e) => removeInternship(index, e)}
-              className='DeleteEmp'
+              className="DeleteEmp"
             >
               <Trash3Fill size={20} />
             </button>
@@ -522,9 +522,9 @@ export default function CustomSection({
       {/* Add hobbies if any */}
       <div ref={hobbyRef}>
         {hobbies.map((hobby, index) => (
-          <div key={index} className='employmentHistoryDiv'>
-            <h5 className='personalSubSubHeading'>
-              <Bicycle color='#35b276' size={24} /> &nbsp;&nbsp;Hobbies
+          <div key={index} className="employmentHistoryDiv">
+            <h5 className="personalSubSubHeading">
+              <Bicycle color="#027AC0" size={24} /> &nbsp;&nbsp;Hobbies
             </h5>
             <textarea
               value={hobby}
@@ -533,16 +533,16 @@ export default function CustomSection({
                 updatedHobbies[index] = e.target.value;
                 setHobbies(updatedHobbies);
               }}
-              rows='6 '
-              cols='80'
-              placeholder='Eg: Travelling, Hiking, Swimming,Cricket'
-              className='detailsTextarea '
+              rows="6 "
+              cols="80"
+              placeholder="Eg: Travelling, Hiking, Swimming,Cricket"
+              className="detailsTextarea "
             />
             <br />
             <button
-              type='button'
+              type="button"
               onClick={(e) => removeHobby(index, e)}
-              className='DeleteEmp'
+              className="DeleteEmp"
             >
               <Trash3Fill size={20} />
             </button>
@@ -553,19 +553,19 @@ export default function CustomSection({
       {/* Add Languages if any */}
       <div ref={languageRef}>
         {languages.map((language, index) => (
-          <div key={index} className='employmentHistoryDiv'>
-            <h5 className='personalSubSubHeading'>
-              <Alipay color='#35b276' size={24} /> &nbsp;&nbsp;Languages{" "}
+          <div key={index} className="employmentHistoryDiv">
+            <h5 className="personalSubSubHeading">
+              <Alipay color="#027AC0" size={24} /> &nbsp;&nbsp;Languages{" "}
               {index + 1} :
             </h5>
-            <div className='row'>
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+            <div className="row">
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Language:
                 </label>
                 <input
-                  className='detailsInfoInput'
-                  type='text'
+                  className="detailsInfoInput"
+                  type="text"
                   value={language.language}
                   onChange={(e) => {
                     const updatedLanguages = [...languages];
@@ -575,12 +575,12 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Level:
                 </label>
                 <select
-                  className='detailsInfoInput'
+                  className="detailsInfoInput"
                   value={language.level}
                   onChange={(e) => {
                     const updatedLanguages = [...languages];
@@ -588,32 +588,32 @@ export default function CustomSection({
                     setLanguages(updatedLanguages);
                   }}
                 >
-                  <option value='' className='detailsInfoInput'>
+                  <option value="" className="detailsInfoInput">
                     Select Level
                   </option>
-                  <option value='native speaker'>Native Speaker</option>
-                  <option value='Highly Good Command'>
+                  <option value="native speaker">Native Speaker</option>
+                  <option value="Highly Good Command">
                     Highly Good Command
                   </option>
-                  <option value='Very Good Command'>Very Good Command</option>
-                  <option value='Good Working Knowledge'>
+                  <option value="Very Good Command">Very Good Command</option>
+                  <option value="Good Working Knowledge">
                     Good Working Knowledge
                   </option>
-                  <option value='Working Knowledge'>Working Knowledge</option>
-                  <option value='C2'>C2</option>
-                  <option value='C1'>C1</option>
-                  <option value='B2'>B2</option>
-                  <option value='B1'>B1</option>
-                  <option value='A2'>A2</option>
-                  <option value='A1'>A1</option>
+                  <option value="Working Knowledge">Working Knowledge</option>
+                  <option value="C2">C2</option>
+                  <option value="C1">C1</option>
+                  <option value="B2">B2</option>
+                  <option value="B1">B1</option>
+                  <option value="A2">A2</option>
+                  <option value="A1">A1</option>
                 </select>
               </div>
             </div>
             <br />
             <button
-              type='button'
+              type="button"
               onClick={(e) => removeLanguage(index, e)}
-              className='DeleteEmp'
+              className="DeleteEmp"
             >
               <Trash3Fill size={20} />
             </button>
@@ -624,19 +624,19 @@ export default function CustomSection({
       {/* Add references if any */}
       <div ref={referenceRef}>
         {references.map((reference, index) => (
-          <div key={index} className='employmentHistoryDiv'>
-            <h5 className='personalSubSubHeading'>
-              <MegaphoneFill color='#35b276' size={24} /> &nbsp;&nbsp;References{" "}
+          <div key={index} className="employmentHistoryDiv">
+            <h5 className="personalSubSubHeading">
+              <MegaphoneFill color="#027AC0" size={24} /> &nbsp;&nbsp;References{" "}
               {index + 1} :
             </h5>
-            <div className='row'>
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+            <div className="row">
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Full Name
                 </label>
                 <input
-                  className='detailsInfoInput'
-                  type='text'
+                  className="detailsInfoInput"
+                  type="text"
                   value={reference.fullName}
                   onChange={(e) => {
                     const updatedReferences = [...references];
@@ -646,13 +646,13 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Company
                 </label>
                 <input
-                  className='detailsInfoInput'
-                  type='text'
+                  className="detailsInfoInput"
+                  type="text"
                   value={reference.company}
                   onChange={(e) => {
                     const updatedReferences = [...references];
@@ -662,13 +662,13 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Phone
                 </label>
                 <input
-                  className='detailsInfoInput'
-                  type='number'
+                  className="detailsInfoInput"
+                  type="number"
                   value={reference.phone}
                   onChange={(e) => {
                     const updatedReferences = [...references];
@@ -678,13 +678,13 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Email
                 </label>
                 <input
-                  className='detailsInfoInput'
-                  type='email'
+                  className="detailsInfoInput"
+                  type="email"
                   value={reference.referenceEmail}
                   onChange={(e) => {
                     const updatedReferences = [...references];
@@ -696,9 +696,9 @@ export default function CustomSection({
             </div>
             <br />
             <button
-              type='button'
+              type="button"
               onClick={(e) => removeReference(index, e)}
-              className='DeleteEmp'
+              className="DeleteEmp"
             >
               <Trash3Fill size={20} />
             </button>
@@ -709,21 +709,21 @@ export default function CustomSection({
       {/* Add custom details if any */}
       <div ref={customRef}>
         {customSections.map((section, index) => (
-          <div key={index} className='employmentHistoryDiv'>
-            <h5 className='personalSubSubHeading'>
-              <CheckSquare color='#35b276' size={24} /> &nbsp;&nbsp;Custom
+          <div key={index} className="employmentHistoryDiv">
+            <h5 className="personalSubSubHeading">
+              <CheckSquare color="#027AC0" size={24} /> &nbsp;&nbsp;Custom
               Section {index + 1} :
             </h5>
-            <div className='row'>
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+            <div className="row">
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Title:
                 </label>
                 <input
-                  className='detailsInfoInput'
-                  type='text'
+                  className="detailsInfoInput"
+                  type="text"
                   value={section.title}
-                  placeholder='Eg: Projects'
+                  placeholder="Eg: Projects"
                   onChange={(e) => {
                     const updatedCustomSections = [...customSections];
                     updatedCustomSections[index].title = e.target.value;
@@ -732,15 +732,15 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Sub-Title:
                 </label>
                 <input
-                  className='detailsInfoInput'
-                  type='text'
+                  className="detailsInfoInput"
+                  type="text"
                   value={section.subTitle}
-                  placeholder='Eg: PromptOptiGen'
+                  placeholder="Eg: PromptOptiGen"
                   onChange={(e) => {
                     const updatedCustomSections = [...customSections];
                     updatedCustomSections[index].subTitle = e.target.value;
@@ -749,13 +749,13 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   Start Date
                 </label>
                 <input
-                  className='detailsInfoInput'
-                  type='date'
+                  className="detailsInfoInput"
+                  type="date"
                   value={section.startDate}
                   onChange={(e) => {
                     const updatedCustomSections = [...customSections];
@@ -765,13 +765,13 @@ export default function CustomSection({
                 />
               </div>
 
-              <div className='col-md-6'>
-                <label className='detailsInfoLabel customSecdetailsInfoLabel'>
+              <div className="col-md-6">
+                <label className="detailsInfoLabel customSecdetailsInfoLabel">
                   End Date
                 </label>
                 <input
-                  className='detailsInfoInput'
-                  type='Date'
+                  className="detailsInfoInput"
+                  type="Date"
                   value={section.endDate}
                   onChange={(e) => {
                     const updatedCustomSections = [...customSections];
@@ -782,7 +782,7 @@ export default function CustomSection({
               </div>
             </div>
 
-            <label className='detailsInfoLabel customSecdetailsInfoLabel courseDescription'>
+            <label className="detailsInfoLabel customSecdetailsInfoLabel courseDescription">
               Description:
             </label>
             <textarea
@@ -792,16 +792,16 @@ export default function CustomSection({
                 updatedCustomSections[index].description = e.target.value;
                 setCustomSections(updatedCustomSections);
               }}
-              rows='6 '
-              cols='80'
-              placeholder='Eg: Developed an innovative Prompt Engineering project using Python, NLP, and machine learning to optimize AI-generated content prompts. Implemented advanced algorithms for prompt design and refinement, showcasing expertise in enhancing content creation processes and boosting user engagement.'
-              className='detailsTextarea '
+              rows="6 "
+              cols="80"
+              placeholder="Eg: Developed an innovative Prompt Engineering project using Python, NLP, and machine learning to optimize AI-generated content prompts. Implemented advanced algorithms for prompt design and refinement, showcasing expertise in enhancing content creation processes and boosting user engagement."
+              className="detailsTextarea "
             />
             <br />
             <button
-              type='button'
+              type="button"
               onClick={(e) => removeCustomSection(index, e)}
-              className='DeleteEmp'
+              className="DeleteEmp"
             >
               <Trash3Fill size={20} />
             </button>
@@ -810,81 +810,81 @@ export default function CustomSection({
       </div>
 
       {!liveForm && (
-        <div className='customHeadingsLowerDiv row'>
-          <h5 className='formSection customSecMainHeading'>
-            <ColumnsGap color='#35b276' size={32} /> &nbsp;Add Custom Details
+        <div className="customHeadingsLowerDiv row">
+          <h5 className="formSection customSecMainHeading">
+            <ColumnsGap color="#027AC0" size={32} /> &nbsp;Add Custom Details
           </h5>
-          <div className='col-md-4 checkme zoom'>
+          <div className="col-md-4 checkme zoom">
             <button
-              type='button'
+              type="button"
               onClick={addCourse}
-              className='Sec1additionalDetails addExtraBtns'
+              className="Sec1additionalDetails addExtraBtns"
             >
               {/* <Check2Circle size={20} /> &nbsp;&nbsp; */}
               <Book size={26} />
               &nbsp;&nbsp;&nbsp;Add Courses
             </button>
           </div>
-          <div className='col-md-4 checkme zoom'>
+          <div className="col-md-4 checkme zoom">
             <button
-              type='button'
+              type="button"
               onClick={addActivity}
-              className='Sec1additionalDetails addExtraBtns'
+              className="Sec1additionalDetails addExtraBtns"
             >
               {/* <Check2Circle size={20} /> &nbsp;&nbsp; */}
               <BagFill size={26} />
               &nbsp;&nbsp;&nbsp;Add Extra-Cirricular Activities
             </button>
           </div>
-          <div className='col-md-4 checkme zoom'>
+          <div className="col-md-4 checkme zoom">
             <button
-              type='button'
+              type="button"
               onClick={addInternship}
-              className='Sec1additionalDetails addExtraBtns'
+              className="Sec1additionalDetails addExtraBtns"
             >
               {/* <Check2Circle size={20} /> &nbsp;&nbsp; */}
               <GraphUpArrow size={26} />
               &nbsp;&nbsp;&nbsp;Add Internships
             </button>
           </div>
-          <div className='col-md-4 checkme zoom'>
+          <div className="col-md-4 checkme zoom">
             <button
-              type='button'
+              type="button"
               onClick={addHobby}
-              className='Sec1additionalDetails addExtraBtns'
+              className="Sec1additionalDetails addExtraBtns"
             >
               {/* <Check2Circle size={20} /> &nbsp;&nbsp; */}
               <Bicycle size={26} />
               &nbsp;&nbsp;&nbsp;Add Hobbies
             </button>
           </div>
-          <div className='col-md-4 checkme zoom'>
+          <div className="col-md-4 checkme zoom">
             <button
-              type='button'
+              type="button"
               onClick={addLanguage}
-              className='Sec1additionalDetails addExtraBtns'
+              className="Sec1additionalDetails addExtraBtns"
             >
               {/* <Check2Circle size={20} /> &nbsp;&nbsp; */}
               <Alipay size={26} />
               &nbsp;&nbsp;&nbsp;Add Languages
             </button>
           </div>
-          <div className='col-md-4 checkme zoom'>
+          <div className="col-md-4 checkme zoom">
             <button
-              type='button'
+              type="button"
               onClick={addReference}
-              className='Sec1additionalDetails addExtraBtns'
+              className="Sec1additionalDetails addExtraBtns"
             >
               {/* <Check2Circle size={20} /> &nbsp;&nbsp; */}
               <MegaphoneFill size={26} />
               &nbsp;&nbsp;&nbsp;Add References
             </button>
           </div>
-          <div className='col-md-4 checkme zoom'>
+          <div className="col-md-4 checkme zoom">
             <button
-              type='button'
+              type="button"
               onClick={addCustomSection}
-              className='Sec1additionalDetails addExtraBtns'
+              className="Sec1additionalDetails addExtraBtns"
             >
               {/* <Check2Circle size={20} /> &nbsp;&nbsp; */}
               <CheckSquare size={26} />
@@ -896,81 +896,81 @@ export default function CustomSection({
 
       {/* Custom Sectio For Create Live */}
       {liveForm && (
-        <div className='customHeadingsLowerDiv row'>
-          <h5 className='formSection customSecMainHeading'>
-            <ColumnsGap color='#35b276' size={32} /> &nbsp;Add Custom Details
+        <div className="customHeadingsLowerDiv row">
+          <h5 className="formSection customSecMainHeading">
+            <ColumnsGap color="#027AC0" size={32} /> &nbsp;Add Custom Details
           </h5>
-          <div className='col-md-5  zoom'>
+          <div className="col-md-5  zoom">
             <button
-              type='button'
+              type="button"
               onClick={addCourse}
-              className='Sec1additionalDetails addExtraBtns createCustomAdditons'
+              className="Sec1additionalDetails addExtraBtns createCustomAdditons"
             >
               {/* <Check2Circle size={20} /> &nbsp;&nbsp; */}
               <Book size={25} />
               &nbsp;&nbsp;&nbsp;Add Courses
             </button>
           </div>
-          <div className='col-md-7  zoom'>
+          <div className="col-md-7  zoom">
             <button
-              type='button'
+              type="button"
               onClick={addActivity}
-              className='Sec1additionalDetails addExtraBtns createCustomAdditons'
+              className="Sec1additionalDetails addExtraBtns createCustomAdditons"
             >
               {/* <Check2Circle size={20} /> &nbsp;&nbsp; */}
               <BagFill size={25} />
               &nbsp;&nbsp;&nbsp;Add Extra-Cirricular Activities
             </button>
           </div>
-          <div className='col-md-5  zoom'>
+          <div className="col-md-5  zoom">
             <button
-              type='button'
+              type="button"
               onClick={addInternship}
-              className='Sec1additionalDetails addExtraBtns createCustomAdditons'
+              className="Sec1additionalDetails addExtraBtns createCustomAdditons"
             >
               {/* <Check2Circle size={20} /> &nbsp;&nbsp; */}
               <GraphUpArrow size={25} />
               &nbsp;&nbsp;&nbsp;Add Internships
             </button>
           </div>
-          <div className='col-md-7  zoom'>
+          <div className="col-md-7  zoom">
             <button
-              type='button'
+              type="button"
               onClick={addHobby}
-              className='Sec1additionalDetails addExtraBtns createCustomAdditons'
+              className="Sec1additionalDetails addExtraBtns createCustomAdditons"
             >
               {/* <Check2Circle size={20} /> &nbsp;&nbsp; */}
               <Bicycle size={25} />
               &nbsp;&nbsp;&nbsp;Add Hobbies
             </button>
           </div>
-          <div className='col-md-5  zoom'>
+          <div className="col-md-5  zoom">
             <button
-              type='button'
+              type="button"
               onClick={addLanguage}
-              className='Sec1additionalDetails addExtraBtns createCustomAdditons'
+              className="Sec1additionalDetails addExtraBtns createCustomAdditons"
             >
               {/* <Check2Circle size={20} /> &nbsp;&nbsp; */}
               <Alipay size={25} />
               &nbsp;&nbsp;&nbsp;Add Languages
             </button>
           </div>
-          <div className='col-md-7  zoom'>
+          <div className="col-md-7  zoom">
             <button
-              type='button'
+              type="button"
               onClick={addReference}
-              className='Sec1additionalDetails addExtraBtns createCustomAdditons'
+              className="Sec1additionalDetails addExtraBtns createCustomAdditons"
             >
               {/* <Check2Circle size={20} /> &nbsp;&nbsp; */}
               <MegaphoneFill size={25} />
               &nbsp;&nbsp;&nbsp;Add References
             </button>
           </div>
-          <div className='col-md-5  zoom'>
+          <div className="col-md-5  zoom">
             <button
-              type='button'
+              type="button"
               onClick={addCustomSection}
-              className='Sec1additionalDetails addExtraBtns createCustomAdditons'
+              className="Sec1additionalDetails addExtraBtns createCustomAdditons"
             >
               {/* <Check2Circle size={20} /> &nbsp;&nbsp; */}
               <CheckSquare size={25} />

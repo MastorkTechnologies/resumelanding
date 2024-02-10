@@ -7,7 +7,7 @@ const Test = () => {
   return (
     <>
       {displayInfo && (
-        <div className='infoText' style={{ position: "absolute" }}>
+        <div className="infoText" style={{ position: "absolute" }}>
           <p>I am information</p>
         </div>
       )}
@@ -15,7 +15,7 @@ const Test = () => {
       <p style={{ marginTop: "200px", marginLeft: "200px" }}>
         Hello &nbsp;&nbsp;{" "}
         <InfoCircleFill
-          color='#35b276'
+          color="#027AC0"
           size={22}
           onMouseEnter={() => setDisplayInfo(true)}
           onMouseLeave={() => setDisplayInfo(false)}

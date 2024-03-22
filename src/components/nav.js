@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styleSheet/Nav.css";
 import img1 from "../images/3.png";
 import img2 from "../images/25.png";
@@ -7,20 +8,25 @@ import { useNavigate } from "react-router-dom";
 
 export default function Nav() {
   const navigate = useNavigate();
+
   const redirectHome = () => {
     navigate("/");
   };
 
   return (
     <div>
-      <nav class="navbar bg-body-tertiary myNav">
-        <div class="container-fluid">
-          <a class="navbar-brand mb-0 navText" href="#">
-            &nbsp; &nbsp;
-            <img src={img3} class="logoImg" />
-            &nbsp; &nbsp;
+      <nav className="navbar bg-body-tertiary myNav">
+        <div className="container">
+          <Link className="navbar-brand mb-0 navText" to="/">
+            <img src={img3} className="logoImg" alt="Logo" />
             <strong onClick={redirectHome}>RESUME SHAPER</strong>
-          </a>
+          </Link>
+          <div className="navButtons">
+            <div onClick={() => navigate("/solutions")}>Solutions</div>
+            <div onClick={() => navigate("/how-it-works")}>How It Works</div>
+            <div onClick={() => navigate("/features")}>Features</div>
+            <div onClick={() => navigate("/reviews")}>Reviews</div>
+          </div>
         </div>
       </nav>
     </div>

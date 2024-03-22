@@ -1,25 +1,38 @@
 .myNav {
- background: rgb(42,172,234) !important;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  font-family: "Open Sans", sans-serif;
-  color: #ffffff;
-  z-index: 11;
   display: flex;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; /* Set background color to white */
+  color: black; /* Set text color to black */
+  padding: 10px; /* Add padding for spacing */
+}
+.container{
+  padding: 11px;
+  display: flex;
+  justify-content: start;
+  gap: 29rem;
 }
 
-.logoImg {
-  height: 50px;
+.navButtons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  color: black;
+  font-size: 22px;
+  font-weight: 700;
 }
 
-.navText {
-  color: #ffffff;
-  font-size: 25px;
+.navButtons button {
+  margin: 0 10px; /* Adjust margin as needed */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-@media only screen and (max-width: 480px) {
-  .navText {
-    color: #ffffff;
-    font-size: 16px;
-  }
+.navButtons button:hover {
+  background-color: #0056b3;
 }

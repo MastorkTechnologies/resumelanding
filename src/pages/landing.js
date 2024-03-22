@@ -39,6 +39,26 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { useSelector } from "react-redux";
 import { Link } from "react-scroll";
+import box1 from "../images/box1.png"
+import box2 from "../images/box2.png"
+import box3 from "../images/box3.png"
+import box4 from "../images/box4.png"
+import arrow from "../images/arrow.png"
+import box1bg from '../images/box1bg.png'
+import box2bg from '../images/box2bg.png'
+import box3bg from '../images/box3bg.png'
+import box4bg from '../images/box4bg.png'
+import groupimage from '../images/groupimage.png'
+import why1 from '../images/why1.png'
+import why2 from '../images/why2.png'
+import why3 from '../images/why3.png'
+import why4 from '../images/feature-img4.png'
+import why5 from '../images/why5.png'
+import p1 from "../images/p1.png"
+import p2 from "../images/p2.png"
+import p3 from "../images/p3.png"
+import p4 from "../images/p4.png"
+import p5 from "../images/p5.png"
 
 export default function Landing() {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -117,7 +137,48 @@ export default function Landing() {
             <LoginPopup onClose={togglePopup} onSignup={handleSignup} />
           )}
 
-          <div className="topDivLanding">
+
+
+          {/* {section raise ai} */}
+
+          <div className="raise-mainOuter">
+            <div className="raise-upper">
+              <div className="raise-upperheading">Raize AI</div>
+              <div className="raise-upperheadingtext">
+                Revolutionizing Resume Creation</div>
+              <div className="raise-uppertext">In the fast-paced world of staffing, there's a game changer that's turning the tide on traditional resume writing. Enter Raize AI – your partner in creating resumes quickly and efficiently.</div>
+
+
+            </div>
+            <img className="raise-img" src={groupimage} alt="img"></img>
+            <img className="raise-img1" src={p1} alt="img"></img>
+            <img className="raise-img2" src={p2} alt="img"></img>
+            <img className="raise-img3" src={p3} alt="img"></img>
+            <img className="raise-img4" src={p4} alt="img"></img>
+            <img className="raise-img5" src={p5} alt="img"></img>
+            <img className="raise-img6" src={p5} alt="img"></img>
+            <div className="raise-bottom">
+              <div className="raise-bottomheading">A New Dawn for Staffing Agencies</div>
+              <div className="raise-bottomtext">
+                There was a time when staffing professionals like you were buried under piles of resumes, racing against time to meet the endless demands of job placements. But now, with Raize AI, those days are a distant memory.
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+          {/* <div className="topDivLanding">
             <div class="jumbotron ">
               <div className="jumboText ">
                 <h1 class="jumboMainText">
@@ -131,9 +192,9 @@ export default function Landing() {
               </div>
 
               <div className="jumboImgDiv ">
-                {/* <img src={img17} className='jumboImg' /> */}
+                {/* <img src={img17} className='jumboImg' /> *}
                 <img src={img15} className="jumboImg" />
-                {/* <img src={img16} className='jumboImg' /> */}
+                {/* <img src={img16} className='jumboImg' /> *}
               </div>
             </div>
             <button
@@ -150,8 +211,8 @@ export default function Landing() {
           </div>
           <div className=" smallScreenDiv ">
             {/* <img src={img17} className='jumboImg' /> */}
-            <img src={img15} className="jumboImg" />
-            {/* <img src={img16} className='jumboImg' /> */}
+            {/* <img src={img15} className="jumboImg" /> */}
+            {/* <img src={img16} className='jumboImg' /> *}
           </div>
 
           <div className="introText">
@@ -162,9 +223,215 @@ export default function Landing() {
               Resume Shaper, where we craft resumes as unique as your career
               aspirations. "
             </p>
+          </div> */}
+
+          {/* {section streamline} */}
+          <div className="stream-mainOuter">
+            <div className="stream-upper">
+              Streamlining Success, One Resume at a Time
+
+            </div>
+            <div className="stream-bottom">
+              <div className="stream-box" style={{ backgroundImage: `url(${box1bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <img className="stream-boximage" src={box1} alt="img"></img>
+                <div className="stream-boxheading">
+                  Effortless Resume Creation
+
+                </div>
+                <div className="stream-boxtext">
+                  Imagine cutting down hours of work into mere minutes, delivering batches of resumes faster than ever before.
+
+                </div>
+                <div className="stream-boxbtn">
+                  Get started
+                  <img src={arrow} alt="img"></img>
+
+                </div>
+
+
+              </div>
+
+              <div className="stream-box" style={{ backgroundImage: `url(${box2bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <img className="stream-boximage" src={box2} alt="img"></img>
+                <div className="stream-boxheading">
+                  Immediate Turnaround
+
+                </div>
+                <div className="stream-boxtext">
+                  Gone are the delays. With Raize AI, resumes are ready almost as soon as you need them, accelerating your placement process.
+
+
+                </div>
+                <div className="stream-boxbtn">
+                  Get started
+                  <img src={arrow} alt="img"></img>
+
+                </div>
+
+
+              </div>
+
+              <div className="stream-box" style={{ backgroundImage: `url(${box3bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <img className="stream-boximage" src={box3} alt="img"></img>
+                <div className="stream-boxheading">
+                  Consistent Quality
+
+                </div>
+                <div className="stream-boxtext">
+                  Each resume stands out, crafted to perfection, impressing clients and employers alike with its clarity and professionalism.
+
+                </div>
+                <div className="stream-boxbtn">
+                  Get started
+                  <img src={arrow} alt="img"></img>
+
+                </div>
+
+
+              </div>
+
+              <div className="stream-box" style={{ backgroundImage: `url(${box4bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+                <img className="stream-boximage" src={box4} alt="img"></img>
+                <div className="stream-boxheading">
+                  Tailored to Fit
+
+                </div>
+                <div className="stream-boxtext">
+                  It's as if each resume is handpicked for the job, enhancing the chances of your candidates standing out in the competitive job market.
+
+                </div>
+                <div className="stream-boxbtn">
+                  Get started
+                  <img src={arrow} alt="img"></img>
+
+                </div>
+
+
+              </div>
+
+            </div>
           </div>
 
-          <div className="section1 ">
+
+          {/* {section trans} */}
+          <div className="trans-mainOuter">
+            <div className="trans-heading">Transforming the Staffing Landscape</div>
+            <div className="trans-list">
+              <div className="trans-box">
+                <div className="trans-number">1</div>
+                <div className="trans-boxheadng">Morning Routine Changed</div>
+                <div className="trans-boxtext">
+                  Kick off your morning by uploading candidate info. In just 5 minutes, Raize AI starts churning out results.
+                </div>
+              </div>
+
+              <div className="trans-box">
+                <div className="trans-number">2</div>
+                <div className="trans-boxheadng">Midday Magic</div>
+                <div className="trans-boxtext">
+                  By lunch, you specify job requirements, and like clockwork, Raize AI customizes each resume, ensuring a perfect match.
+                </div>
+              </div>
+
+              <div className="trans-box">
+                <div className="trans-number">3</div>
+                <div className="trans-boxheadng">End of Day Excellence</div>
+                <div className="trans-boxtext">
+                  Before the day wraps up, you're reviewing a collection of polished resumes, ready to propel candidates into their next career move.
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+
+          {/* {section why} */}
+          <div className="why-mainOuter">
+            <div className="why-heading">
+              Why Raize AI is a Staffing Essential
+            </div>
+            <div className="why-boxOuter">
+              <div className="why-box">
+                <img className="why-boximg" src={why5} alt="img"></img>
+                <div className="why-boxheading">
+                  Support Always on Standby
+                </div>
+                <div className="why-boxtext">
+                  Whenever you have a question, our team is ready to guide you.
+                </div>
+              </div>
+
+              <div className="why-box">
+                <img className="why-boximg" src={why4} alt="img"></img>
+                <div className="why-boxheading">
+                  Time, Reclaimed
+                </div>
+                <div className="why-boxtext">
+                  Rediscover the value of time, with more hours freed up for strategic tasks.
+                </div>
+              </div>
+
+              <div className="why-box">
+                <img className="why-boximg" src={why1} alt="img"></img>
+                <div className="why-boxheading">
+                  Bulk Processing, Personal Touch
+                </div>
+                <div className="why-boxtext">
+                  Handle numerous resumes with the efficiency of a personal assistant, all thanks to Raize AI.
+                </div>
+              </div>
+              <div className="why-box">
+                <img className="why-boximg" src={why2} alt="img"></img>
+                <div className="why-boxheading">
+                  Precision Matching
+                </div>
+                <div className="why-boxtext">
+                  Every resume is a key, perfectly cut to fit the lock of job specifications.
+                </div>
+              </div>
+              <div className="why-box">
+                <img className="why-boximg" src={why3} alt="img"></img>
+                <div className="why-boxheading">
+                  Professional Presentation
+                </div>
+                <div className="why-boxtext">
+                  Stand out with resumes that showcase neat, impactful professionalism.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          {/* {section embark} */}
+          <div className="emb-mainOuter">
+            <div className="emb-left">
+              <div className="emb-heading">
+                Embark on Your Journey
+              </div>
+              <div className="emb-text">
+                Step into a world where Raize AI redefines what’s possible in staffing.
+              </div>
+            </div>
+            <div className="emb-right">Get Started
+              <img src={arrow} /></div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          {/* <div className="section1 ">
             <h3 className="section1Heading "> How Can We Help You?</h3>
 
             <div className="sec1Left  ">
@@ -210,7 +477,7 @@ export default function Landing() {
             </div>
           </div>
 
-          {/* section -2 */}
+          {/* section -2 *}
 
           <div className="section2 custom-background p-5">
             <h3 className="section1Heading ">How it Works</h3>
@@ -273,7 +540,7 @@ export default function Landing() {
             </div>
           </div>
 
-          {/* section 3 */}
+          {/* section 3 *}
           <div className="section3 text-center">
             <h3 className="section1Heading reviewHeading">Demo Video</h3>
             <div className="col-md-6 mx-auto sec4MidDiv1 p-4 h-100">
@@ -299,7 +566,7 @@ export default function Landing() {
             </div>
           </div>
 
-          {/* section - 4  */}
+          {/* section - 4  *}
           <div className="section4">
             <h3 className="section1Heading ">Our Features</h3>
             <div className="container">
@@ -426,58 +693,56 @@ export default function Landing() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* section - 5 */}
           <div className="section5">
-            <h3 className="section1Heading reviewHeading">
-              Rave Reviews Form Our Users
-            </h3>
+            <div className="sec5-heading">
+              <div className="section1Heading reviewHeading">
+                Echoes from the Field
+              </div>
+              <div className="sec5-headingtext">
+                Professionals in staffing shared stories of how Raize AI transformed their workflow, making what seemed impossible—possible.
+                </div>
+
+            </div>
             <div
               id="carouselExampleRide"
               class="carousel slide"
               data-bs-ride="true"
             >
+
               <div class="carousel-inner">
-                <div class="carousel-item landingCaraousel active">
+                <div class="carousel-item landingCaraousel active  ">
                   <div className="row testimonialSlider">
                     <div className="col-md-6">
-                      <div class="card myCard ">
-                        <img
-                          src={img7}
-                          class="card-img-top testimonialImg  "
-                          alt="..."
-                        />
-                        <div class="card-body ">
-                          <BookmarkStarFill size={46} className="star" />
-                          <h5 class="card-title ">Michal R.</h5>
-                          <p class="card-text text-black-50">
-                            <i>
-                              "The ATS optimization was a game changer. I
-                              received more interview calls in a month than I
-                              had in a year. This service is a life saver."
-                            </i>
-                          </p>
+                      <div className="cOuter">
+                        <img className="cimg"  src={img7} />
+                        <div className="cbody">
+                          <div className="cname">
+                            Michal R.
+                          </div>
+                          <div className="ctext">
+                            The ATS optimization was a game changer. I
+                            received more interview calls in a month than I
+                            had in a year. This service is a life saver.
+                          </div>
                         </div>
                       </div>
+
+
+
                     </div>
                     <div className="col-md-6">
-                      <div class="card myCard">
-                        <img
-                          src={img12}
-                          class="card-img-top testimonialImg"
-                          alt="..."
-                        />
-                        <div class="card-body">
-                          <BookmarkStarFill size={46} className="star" />
-                          <h5 class="card-title">David S.</h5>
-                          <p class="card-text">
-                            <i>
-                              "I used to spend hours tweaking my resume for
-                              different jobs.Now, I just upload and apply. Trust
-                              me, it's a huge time-saver."
-                            </i>
-                          </p>
+                      <div className="cOuter">
+                        <img className="cimg" src={img10} />
+                        <div className="cbody">
+                          <div className="cname">
+                            David S
+                          </div>
+                          <div className="ctext">
+                            I used to spend hours tweaking my resume for different jobs.Now, I just upload and apply. Trust me, it's a huge time-saver
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -486,44 +751,39 @@ export default function Landing() {
                 <div class="carousel-item landingCaraousel">
                   <div className="row testimonialSlider">
                     <div className="col-md-6">
-                      <div class="card myCard">
-                        <img
-                          src={img9}
-                          class="card-img-top testimonialImg"
-                          alt="..."
-                        />
-                        <div class="card-body">
-                          <BookmarkStarFill size={46} className="star" />
-                          <h5 class="card-title">Laura B.</h5>
-                          <p class="card-text">
-                            <i>
-                              "I was skeptical at first, but Resume Shaper
-                              transformed my resume beautifully. Well, I am a
-                              busy professional and don't edit my resume often.I
-                              can't believeon how much time it saved me. "
-                            </i>
-                          </p>
+                      <div className="cOuter">
+                        <img className="cimg" src={img8} />
+                        <div className="cbody">
+                          <div className="cname">
+                            Laura B.
+                          </div>
+                          <div className="ctext">
+                            I was skeptical at first, but Resume Shaper
+                            transformed my resume beautifully. Well, I am a
+                            busy professional and don't edit my resume often.I
+                            can't believeon how much time it saved me.
+                          </div>
                         </div>
                       </div>
+
+
+
+
+
                     </div>
                     <div className="col-md-6">
-                      <div class="card myCard">
-                        <img
-                          src={img10}
-                          class="card-img-top testimonialImg"
-                          alt="..."
-                        />
-                        <div class="card-body">
-                          <BookmarkStarFill size={46} className="star" />
-                          <h5 class="card-title">Jessica R.</h5>
-                          <p class="card-text">
-                            <i>
-                              "Just in awe of how easy this website has made the
-                              job application process.The time and effort it
-                              saved me are priceless.I'm now applying to jobs I
-                              would'nt have considered before."
-                            </i>
-                          </p>
+                      <div className="cOuter">
+                        <img className="cimg" src={img9} />
+                        <div className="cbody">
+                          <div className="cname">
+                            Jessica R.
+                          </div>
+                          <div className="ctext">
+                            Just in awe of how easy this website has made the
+                            job application process.The time and effort it
+                            saved me are priceless.I'm now applying to jobs I
+                            would'nt have considered before.
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -532,49 +792,46 @@ export default function Landing() {
                 <div class="carousel-item landingCaraousel">
                   <div className="row testimonialSlider">
                     <div className="col-md-6">
-                      <div class="card myCard">
-                        <img
-                          src={img8}
-                          class="card-img-top testimonialImg"
-                          alt="..."
-                        />
-                        <div class="card-body">
-                          <BookmarkStarFill size={46} className="star" />
-                          <h5 class="card-title">Logan Robert M.</h5>
-                          <p class="card-text">
-                            <i>
-                              "I used to procrastinate applying for jobs because
+                      
+
+                      <div className="cOuter">
+                        <img className="cimg" src={img10} />
+                        <div className="cbody">
+                          <div className="cname">
+                          Logan Robert M.
+                          </div>
+                          <div className="ctext">
+                          I used to procrastinate applying for jobs because
                               my resume editing.Now,it's a breeze.The team of
-                              Resume Shaper really did a good job on this one. "
-                            </i>
-                          </p>
+                              Resume Shaper really did a good job on this one.
+                          </div>
                         </div>
                       </div>
+
+
+
+
                     </div>
                     <div className="col-md-6">
-                      <div class="card myCard">
-                        <img
-                          src={img11}
-                          class="card-img-top testimonialImg"
-                          alt="..."
-                        />
-                        <div class="card-body">
-                          <BookmarkStarFill size={46} className="star" />
-                          <h5 class="card-title">Olivia C.</h5>
-                          <p class="card-text">
-                            <i>
-                              "As a recent grad, job hunting was really getting
+                      <div className="cOuter">
+                        <img className="cimg" src={img12} />
+                        <div className="cbody">
+                          <div className="cname">
+                          Olivia C.
+                          </div>
+                          <div className="ctext">
+                          As a recent grad, job hunting was really getting
                               me overwhelmed. I came across this tool and it
                               reduced most of my work.Plus,the results are
-                              incredeble. Highly Recommended!!"
-                            </i>
-                          </p>
+                              incredeble. Highly Recommended!!
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
               <button
                 style={{ backgroundColor: "#2aacea" }}
                 class="carousel-control-prev landing-carousel-control-prev"
@@ -603,10 +860,27 @@ export default function Landing() {
               </button>
             </div>
           </div>
+
+          {/* {section join} */}
+
+          <div className="join-mainOuter">
+          <div className="join-left">
+              <div className="join-heading">
+              Join the Revolution with Raize AI
+              </div>
+              <div className="join-text">
+              Step into the future where resume creation meets speed and precision. Let Raize AI be the backbone of your staffing success.
+              </div>
+            </div>
+            <div className="join-right">Get Started
+              <img src={arrow} /></div>
+
+          </div>
+
           <Footer />
         </div>
       )}
-          
+
     </>
   );
 }

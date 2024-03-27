@@ -39,7 +39,14 @@ const Footer = () => {
             <div className={fstyle.footeroptions}>
               <h4>Quick Links</h4>
               <div className={fstyle.foptions}>
-                <p>About us </p>
+                <p>
+                  <Link
+                    href={"/about"}
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    About us
+                  </Link>
+                </p>
                 <p>
                   <ScrollLink
                     to='howitworks'

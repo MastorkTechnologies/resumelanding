@@ -6,7 +6,7 @@ const Features = () => {
   return (
     <section className={featureStyle.main} id='features'>
       <div className={featureStyle.container}>
-        <h4>Why Raize AI is a Staffing Essential</h4>
+        <h4>Why Resume Craft is a Staffing Essential</h4>
         <div className={featureStyle.cardsection}>
           <div className={featureStyle.card}>
             <div className={featureStyle.cardContainer}>
@@ -20,7 +20,7 @@ const Features = () => {
               <h4>Bulk Processing, Personal Touch</h4>
               <p>
                 Handle numerous resumes with the efficiency of a personal
-                assistant, all thanks to Raize AI.
+                assistant, all thanks to Resume Craft.
               </p>
             </div>
           </div>

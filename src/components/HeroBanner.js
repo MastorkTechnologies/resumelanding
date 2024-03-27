@@ -7,12 +7,12 @@ const HeroBanner = () => {
     <section className={heroStyle.main}>
       <div className={heroStyle.heroContainer}>
         <h3>
-          <span>Raize AI </span> <br />
+          <span>Resume Craft </span> <br />
           Revolutionizing Resume Creation
         </h3>
         <p>
           In the fast-paced world of staffing, there's a game changer that's
-          turning the tide on traditional resume writing. Enter Raize AI – your
+          turning the tide on traditional resume writing. Enter Resume Craft – your
           partner in creating resumes quickly and efficiently.
         </p>
         <button>
@@ -49,7 +49,7 @@ const HeroBanner = () => {
             There was a time when <span>staffing professionals</span> like you
             were buried under piles of resumes, racing against time to <br />{" "}
             meet the endless demands of job placements. But now, with{" "}
-            <span>Raize AI</span>, those days are a distant memory.
+            <span>Resume Craft</span>, those days are a distant memory.
           </p>
         </div>
       </div>

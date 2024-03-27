@@ -6,10 +6,10 @@ const JoinAi = () => {
     <section className={joinaiStyle.main}>
       <div className={joinaiStyle.container}>
         <div className={joinaiStyle.joinAideatils}>
-          <h3>Join the Revolution with Raize AI</h3>
+          <h3>Join the Revolution with Resume Craft</h3>
           <p>
             Step into the future where resume creation meets speed and
-            precision. Let Raize AI <br /> be the backbone of your staffing
+            precision. Let Resume Craft <br /> be the backbone of your staffing
             success.
           </p>
         </div>

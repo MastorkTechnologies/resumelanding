@@ -8,7 +8,7 @@ const Move = () => {
         <div className={mstyle.joinAideatils}>
           <h3>Embark on Your Journey</h3>
           <p>
-            Step into a world where Raize AI redefines what’s possible in
+            Step into a world where Resume Craft redefines what’s possible in
             staffing.
           </p>
         </div>

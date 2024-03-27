@@ -11,7 +11,7 @@ const page = () => {
       <Navbar />
       <div className={contactStyle.container}>
         <div className={contactStyle.contactWrapperleft}>
-          <h5>HOW WE WORK?</h5>
+          <h5>HOW YOU CAN CONTACT US?</h5>
           <p>
             You can register your query here, Please send your question to us.
           </p>

@@ -9,7 +9,7 @@ export const solutionlist = [
   {
     title: "Immediate Turnaround",
     description:
-      "Gone are the delays. With Raize AI, resumes are ready almost as soon as you need them, accelerating your placement process.",
+      "Gone are the delays. With Resume Craft, resumes are ready almost as soon as you need them, accelerating your placement process.",
     picture: "/Images/solution2.png",
     background: "rgba(241, 154, 255, 1)",
   },
@@ -33,12 +33,12 @@ export const hiwList = [
   {
     title: "Morning Routine Changed",
     description:
-      "Kick off your morning by uploading candidate info. In just 5 minutes, Raize AI starts churning out results.",
+      "Kick off your morning by uploading candidate info. In just 5 minutes, Resume Craft starts churning out results.",
   },
   {
     title: "Midday Magic",
     description:
-      "By lunch, you specify job requirements, and like clockwork, Raize AI customizes each resume, ensuring a perfect match.",
+      "By lunch, you specify job requirements, and like clockwork, Resume Craft customizes each resume, ensuring a perfect match.",
   },
   {
     title: "End of Day Excellence",

@@ -18,7 +18,7 @@ const Testimonial = () => {
       <div className={testimonialStyle.container}>
         <h4>How does it work?</h4>
         <p>
-          Professionals in staffing shared stories of how Raize AI transformed
+          Professionals in staffing shared stories of how Resume Craft transformed
           their workflow,
           <br /> making what seemed impossible—possible.
         </p>

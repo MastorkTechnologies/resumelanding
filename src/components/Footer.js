@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
         <div className={fstyle.down}>
           <div className={fstyle.downleft}>
-            <h4>Resume Shaper</h4>
+            <h4>Resume Craft</h4>
             <p>Resumes Redefined, Success Rewritten.</p>
             <Image
               src={"/Images/Social.png"}
@@ -89,7 +89,7 @@ const Footer = () => {
             <div className={fstyle.footeroptions}>
               <h4>Connect with us</h4>
               <div className={fstyle.foptions}>
-                <p>contact@resumeshaper.com</p>
+                <p>contact@resumecraft.com</p>
               </div>
             </div>
           </div>

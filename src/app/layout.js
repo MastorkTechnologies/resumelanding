@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Resume Shaper",
+  title: "Resume Craft",
   description: "",
 };
 

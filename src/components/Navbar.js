@@ -16,7 +16,7 @@ const Navbar = () => {
               href='/'
               style={{ textDecoration: "none", color: "rgba(22, 115, 255, 1)" }}
             >
-              resume shaper
+              Resume Craft
             </Link>
           </h4>
         </div>

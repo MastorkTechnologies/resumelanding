@@ -1,5 +1,6 @@
 import React from "react";
 import mstyle from "@/styles/move.module.css";
+import Link from "next/link";
 
 const Move = () => {
   return (
@@ -13,7 +14,12 @@ const Move = () => {
           </p>
         </div>
         <button>
-          Get Started
+          <Link
+            href={"/contact"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Get Started
+          </Link>
           <svg
             width='23'
             height='24'

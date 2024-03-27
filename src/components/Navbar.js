@@ -76,7 +76,15 @@ const Navbar = () => {
         </div>
         <div className={navStyle.right}>
           <p>Sign In</p>
-          <button>Get Started</button>
+          <button>
+            {" "}
+            <Link
+              href={"/contact"}
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Get Started
+            </Link>
+          </button>
         </div>
         <div className={navStyle.mobile}>
           <Image
@@ -154,7 +162,14 @@ const Navbar = () => {
               </div>
               <div className={navStyle.rightMobile}>
                 <p>Sign In</p>
-                <button>Get Started</button>
+                <button>
+                  <Link
+                    href={"/contact"}
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    Get Started
+                  </Link>
+                </button>
               </div>
             </div>
           )}

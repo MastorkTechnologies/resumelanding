@@ -14,7 +14,14 @@ const Footer = () => {
             Resumes Redefined,
             <br /> Success Rewritten.
           </h3>
-          <button>Get Started</button>
+          <button>
+            <Link
+              href={"/contact"}
+              style={{ textDecoration: "none", color: "white" }}
+            >
+              Get Started
+            </Link>
+          </button>
         </div>
         <div className={fstyle.down}>
           <div className={fstyle.downleft}>

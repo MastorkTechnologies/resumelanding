@@ -1,6 +1,7 @@
 import React from "react";
 import heroStyle from "@/styles/herobanner.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroBanner = () => {
   return (
@@ -12,11 +13,16 @@ const HeroBanner = () => {
         </h3>
         <p>
           In the fast-paced world of staffing, there's a game changer that's
-          turning the tide on traditional resume writing. Enter Resume Craft – your
-          partner in creating resumes quickly and efficiently.
+          turning the tide on traditional resume writing. Enter Resume Craft –
+          your partner in creating resumes quickly and efficiently.
         </p>
         <button>
-          Get Started
+          <Link
+            href={"/contact"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Get Started
+          </Link>
           <svg
             width='23'
             height='24'

@@ -27,7 +27,7 @@ const page = () => {
               </div>
               <div className={contactStyle.contactTypeItemsinfo}>
                 <h5>Phone</h5>
-                {/* <p>+91 99110 85997</p> */}
+                <p>+91 99110 85997</p>
               </div>
             </div>
             <div className={contactStyle.contactTypeItem}>

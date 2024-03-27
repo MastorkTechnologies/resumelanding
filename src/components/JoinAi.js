@@ -25,9 +25,9 @@ const JoinAi = () => {
             <path
               d='M13.125 5.4375L19.6875 12M19.6875 12L13.125 18.5625M19.6875 12L2.8125 12'
               stroke='#F9FAFB'
-              stroke-width='2.5'
-              stroke-linecap='round'
-              stroke-linejoin='round'
+              strokeWidth='2.5'
+              strokeLinecap='round'
+              strokeLinejoin='round'
             />
           </svg>
         </button>

@@ -11,7 +11,7 @@ import JoinAi from "@/components/JoinAi";
 const page = async () => {
   const BlogCollectionRef = collection(database, "Blogs");
   const data = await getDocs(query(BlogCollectionRef));
-  const userdata = data.docs.map((doc) => ({
+  const blogdata = data.docs.map((doc) => ({
     ...doc.data(),
     id: doc.id,
   }));
@@ -20,9 +20,9 @@ const page = async () => {
       <Navbar />
       <div className={blogStyle.blogcontainer}>
         <div className={blogStyle.bloglist}>
-          {userdata &&
-            userdata.length > 0 &&
-            userdata.map((item) => {
+          {blogdata &&
+            blogdata.length > 0 &&
+            blogdata.map((item) => {
               return (
                 <div className={blogStyle.card} key={item.id}>
                   <div className={blogStyle.cardContainer}>

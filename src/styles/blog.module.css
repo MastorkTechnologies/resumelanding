@@ -1,0 +1,141 @@
+.main {
+    width: 100%;
+}
+
+.blogcontainer {
+    width: 100%;
+    padding: 50px 130px;
+
+}
+
+.bloglist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.card {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.cardContainer {
+    padding: 10px 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardContainer>.cardImg {
+    border-radius: 4px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cardContainer>h4 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: rgba(22, 115, 255, 1);
+}
+
+.cardContainer>p {
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.20000000298023224px;
+    color: rgba(44, 44, 44, 1);
+}
+
+.cardContainer>button {
+    margin-top: 20px;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    outline: none;
+    border: none;
+    width: auto;
+}
+
+.blogimg {
+    width: 100%;
+    height: auto;
+}
+
+.singleblogcontainer {
+    height: 100%;
+    width: 100%;
+    padding: 50px 130px;
+    gap: 20px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.singleblogiage {
+    flex: 0 0 auto;
+}
+
+.singleblogiage>.singleblogImage {
+    object-fit: cover;
+    width: auto;
+    height: 300px;
+}
+
+.singledetails {
+    flex: 1;
+    margin-left: 10px;
+}
+
+
+.singleblogcontainer>.singledetails>h4 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 80px;
+    text-align: start;
+    color: rgba(22, 115, 255, 1);
+}
+
+.singleblogcontainer>.singledetails>p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: start;
+    color: rgba(130, 130, 130, 1);
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .blogcontainer {
+        padding: 50px 20px;
+    }
+
+    .bloglist {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .singleblogcontainer {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .singleblogiage>.singleblogImage {
+        width: 100%;
+        height: auto;
+    }
+}

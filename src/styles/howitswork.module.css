@@ -1,0 +1,90 @@
+.main {
+    width: 100%;
+    background: rgba(233, 245, 252, 1);
+
+}
+
+.container {
+    padding: 60px 130px;
+}
+
+.container>h4 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.hiwlist {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(222, 222, 222, 1)
+}
+
+.cardContainer {
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardContainer>h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    background-color: rgba(2, 122, 192, 1);
+    width: max-content;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 10px;
+
+
+}
+
+.card>.cardContainer>h4 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+
+}
+
+.cardContainer>p {
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    color: rgba(44, 44, 44, 1);
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .container {
+        padding: 50px 20px;
+    }
+
+    .hiwlist {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px 50px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

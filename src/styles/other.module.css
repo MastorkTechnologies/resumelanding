@@ -20,20 +20,78 @@
 .container>h2 {
     margin-bottom: 20px;
     font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.container>h6 {
+    margin-bottom: 20px;
+    font-size: 16px;
     font-weight: 600;
-    letter-spacing: -0.03em;
     text-align: center;
 }
 
 .contentArea {
-    padding: 100px 0;
+    margin-top: 50px;
+    border-top: 1px solid black;
+    padding: 50px;
     display: flex;
     flex-direction: column;
     text-align: start;
+    gap: 50px;
+
 }
 
 .contentArea>h5 {
     font-size: 16px;
     font-weight: 600;
     letter-spacing: -0.03em;
+}
+
+.contentAreafield {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contentAreafield>h5 {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.contentAreafield>p {
+    padding-left: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    ;
+}
+
+.contentAreafield>ul {
+    padding-left: 100px;
+}
+
+.contentAreafield>ul>li {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 50px 100px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .contentArea {
+        padding: 20px;
+    }
 }

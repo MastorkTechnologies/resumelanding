@@ -1,90 +1,63 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import navStyle from "@/styles/nav.module.css";
 import Image from "next/image";
-import Link from "next/link";
-import { Link as ScrollLink } from "react-scroll";
+import { usePathname, useRouter } from "next/navigation";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const pathName = usePathname();
+  const router = useRouter();
+  const navigation = (link, scrollToId) => {
+    setOpenMenu(false);
+    if (link && scrollToId) {
+      if (pathName == "/") {
+        scrollToElement(scrollToId);
+      } else {
+        router.push(link);
+        setTimeout(() => {
+          scrollToElement(scrollToId);
+        }, 500);
+      }
+    } else {
+      router.push(link);
+    }
+  };
+
+  const scrollToElement = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
+  };
+
+  useEffect(() => {
+    if (window.location.hash) {
+      const elementId = window.location.hash.substring(1);
+      scrollToElement(elementId);
+    }
+  }, []);
+
   return (
     <nav className={navStyle.main}>
       <div className={navStyle.navContainer}>
         <div className={navStyle.logo}>
-          <h4>
-            <Link
-              href='/'
-              style={{ textDecoration: "none", color: "rgba(22, 115, 255, 1)" }}
-            >
-              Resume Craft
-            </Link>
-          </h4>
+          <h4 onClick={() => navigation("/")}>Resume Craft</h4>
         </div>
         <div className={navStyle.menuitems}>
-          <p>
-            <ScrollLink
-              to='solution'
-              smooth={true}
-              duration={500}
-              offset={-70}
-              onClick={() => setOpenMenu(false)}
-            >
-              Solution
-            </ScrollLink>
-          </p>
-          <p>
-            <Link
-              href='/blog'
-              style={{ textDecoration: "none", color: "black" }}
-            >
-              Blog
-            </Link>
-          </p>
-          <p>
-            <ScrollLink
-              to='howitworks'
-              smooth={true}
-              duration={500}
-              offset={-70}
-              onClick={() => setOpenMenu(false)}
-            >
-              How it works
-            </ScrollLink>
-          </p>
-          <p>
-            <ScrollLink
-              to='features'
-              smooth={true}
-              duration={500}
-              offset={-70}
-              onClick={() => setOpenMenu(false)}
-            >
-              Features
-            </ScrollLink>
-          </p>
-          <p>
-            <ScrollLink
-              to='reviews'
-              smooth={true}
-              duration={500}
-              offset={-70}
-              onClick={() => setOpenMenu(false)}
-            >
-              Reviews
-            </ScrollLink>
-          </p>
+          <p onClick={() => navigation("/", "solution")}>Solution</p>
+          <p onClick={() => navigation("/blog")}>Blog</p>
+          <p onClick={() => navigation("/", "howitworks")}>How it works</p>
+          <p onClick={() => navigation("/", "features")}>Features</p>
+          <p onClick={() => navigation("/", "reviews")}>Reviews</p>
         </div>
         <div className={navStyle.right}>
           <p>Sign In</p>
-          <button>
-            {" "}
-            <Link
-              href={"/contact"}
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Get Started
-            </Link>
-          </button>
+          <button onClick={() => navigation("/contact")}>Get Started</button>
         </div>
         <div className={navStyle.mobile}>
           <Image
@@ -108,67 +81,18 @@ const Navbar = () => {
                 />
               </div>
               <div className={navStyle.menuMobileitems}>
-                <p>
-                  <ScrollLink
-                    to='solution'
-                    smooth={true}
-                    duration={500}
-                    offset={-70}
-                    onClick={() => setOpenMenu(false)}
-                  >
-                    Solution
-                  </ScrollLink>
+                <p onClick={() => navigation("/", "solution")}>Solution</p>
+                <p onClick={() => navigation("/blog")}>Blog</p>
+                <p onClick={() => navigation("/", "howitworks")}>
+                  How it works
                 </p>
-                <p>
-                  <Link
-                    href='/blog'
-                    style={{ textDecoration: "none", color: "black" }}
-                  >
-                    Blog
-                  </Link>
-                </p>
-                <p>
-                  <ScrollLink
-                    to='howitworks'
-                    smooth={true}
-                    duration={500}
-                    offset={-70}
-                  >
-                    How it works
-                  </ScrollLink>
-                </p>
-                <p>
-                  <ScrollLink
-                    to='features'
-                    smooth={true}
-                    duration={500}
-                    offset={-70}
-                    onClick={() => setOpenMenu(false)}
-                  >
-                    Features
-                  </ScrollLink>
-                </p>
-                <p>
-                  <ScrollLink
-                    to='reviews'
-                    smooth={true}
-                    duration={500}
-                    offset={-70}
-                    onClick={() => setOpenMenu(false)}
-                  >
-                    Reviews
-                  </ScrollLink>
-                </p>
+                <p onClick={() => navigation("/", "features")}>Features</p>
+                <p onClick={() => navigation("/", "reviews")}>Reviews</p>
               </div>
               <div className={navStyle.rightMobile}>
                 <p>Sign In</p>
-                <button>
-                  <Link
-                    href={"/contact"}
-                    style={{ textDecoration: "none", color: "white" }}
-                  >
-                    Get Started
-                  </Link>
+                <button onClick={() => navigation("/contact")}>
+                  Get Started
                 </button>
               </div>
             </div>

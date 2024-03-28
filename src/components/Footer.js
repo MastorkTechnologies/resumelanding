@@ -1,11 +1,43 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import fstyle from "@/styles/footer.module.css";
-import { Link as ScrollLink } from "react-scroll";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 const Footer = () => {
+  const pathName = usePathname();
+  const router = useRouter();
+  const navigation = (link, scrollToId) => {
+    if (link && scrollToId) {
+      if (pathName == "/") {
+        scrollToElement(scrollToId);
+      } else {
+        router.push(link);
+        setTimeout(() => {
+          scrollToElement(scrollToId);
+        }, 500);
+      }
+    } else {
+      router.push(link);
+    }
+  };
+  const scrollToElement = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
+  };
+  useEffect(() => {
+    if (window.location.hash) {
+      const elementId = window.location.hash.substring(1);
+      scrollToElement(elementId);
+    }
+  }, []);
   return (
     <footer className={fstyle.main}>
       <div className={fstyle.container}>
@@ -47,36 +79,11 @@ const Footer = () => {
                     About us
                   </Link>
                 </p>
-                <p>
-                  <ScrollLink
-                    to='howitworks'
-                    smooth={true}
-                    duration={500}
-                    offset={-70}
-                  >
-                    How it works
-                  </ScrollLink>
+                <p onClick={() => navigation("/", "howitworks")}>
+                  How it works
                 </p>
-                <p>
-                  <ScrollLink
-                    to='features'
-                    smooth={true}
-                    duration={500}
-                    offset={-70}
-                  >
-                    Features
-                  </ScrollLink>
-                </p>
-                <p>
-                  <ScrollLink
-                    to='reviews'
-                    smooth={true}
-                    duration={500}
-                    offset={-70}
-                  >
-                    Testimonials
-                  </ScrollLink>
-                </p>
+                <p onClick={() => navigation("/", "features")}>Features</p>
+                <p onClick={() => navigation("/", "reviews")}>Testimonials</p>
               </div>
             </div>
             <div className={fstyle.footeroptions}>

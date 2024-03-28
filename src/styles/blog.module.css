@@ -119,6 +119,27 @@
 }
 
 
+@media screen and (max-width: 1024px) {
+
+    .blogcontainer {
+        padding: 50px 80px;
+    }
+
+    .bloglist {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .singleblogcontainer {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .singleblogiage>.singleblogImage {
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media screen and (max-width: 480px) {
 
     .blogcontainer {

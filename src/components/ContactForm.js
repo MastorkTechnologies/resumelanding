@@ -4,6 +4,7 @@ import contactStyle from "@/styles/contact.module.css";
 import { doc, setDoc } from "firebase/firestore";
 import { database } from "@/lib/firebase";
 import toast, { Toaster } from "react-hot-toast";
+import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
   const [loading, setLoading] = useState(false);
@@ -23,7 +24,20 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    const templateParams = {
+      form_name: formData.name,
+      to_name: "Rseume Carft",
+      reply_to: formData.email,
+      message: formData.message,
+    };
+
     try {
+      await emailjs.send(
+        "service_9q5fuh2",
+        "template_607ne0f",
+        templateParams,
+        "wdtI23ErZXMrLHXfs"
+      );
       const timeId = new Date().getTime().toString();
       await setDoc(doc(database, "Form", timeId), formData);
       toast.success("Message sent successfully");

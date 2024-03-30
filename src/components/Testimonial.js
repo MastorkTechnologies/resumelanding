@@ -7,19 +7,19 @@ import { testimonial } from "@/assets";
 const Testimonial = () => {
   const slideLeft = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft - 600;
+    slider.scrollLeft = slider.scrollLeft - 700;
   };
   const slideRight = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft + 600;
+    slider.scrollLeft = slider.scrollLeft + 700;
   };
   return (
     <section className={testimonialStyle.main} id='reviews'>
       <div className={testimonialStyle.container}>
         <h4>How does it work?</h4>
         <p>
-          Professionals in staffing shared stories of how Resume Craft transformed
-          their workflow,
+          Professionals in staffing shared stories of how Resume Craft
+          transformed their workflow,
           <br /> making what seemed impossible—possible.
         </p>
         <div className={testimonialStyle.mainSilder}>

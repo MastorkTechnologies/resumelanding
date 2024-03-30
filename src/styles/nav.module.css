@@ -76,6 +76,10 @@
         padding: 15px 20px;
     }
 
+    .logo {
+        margin: 0;
+    }
+
     .menuitems {
         display: none;
     }

@@ -1,0 +1,200 @@
+.main {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    gap: 21px;
+    padding: 100px 130px;
+}
+
+.contactWrapperleft {
+    width: 50%;
+}
+
+.contactWrapperleft>h5 {
+    color: rgba(22, 115, 255, 1);
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+}
+
+.contactWrapperleft>p {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    color: black;
+}
+
+.contactTypeItems {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contactTypeItem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cotactImage {
+    padding: 20px;
+    border-radius: 3px;
+    background: rgba(22, 115, 255, 1);
+
+}
+
+.contactTypeItemsinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactTypeItemsinfo>h5 {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.contactTypeItemsinfo>p {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+.contactWrapperRight {
+    width: 50%;
+    margin: 0 50px;
+}
+
+.conatctForm {
+    height: 100%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.formarea {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.upperfield {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.inputfieldarea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputfieldarea>label {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+
+}
+
+.inputfieldarea>input {
+    width: 100%;
+    background-color: transparent;
+    height: 40px;
+    border-radius: 3px;
+    color: black;
+    border: 1px solid black
+}
+
+.inputfieldarea>textarea {
+    color: black;
+    background-color: transparent;
+    height: 120px;
+    border-radius: 3px;
+    border: 1px solid black;
+    resize: none;
+}
+
+.formarea>button {
+    height: 52px;
+    padding: 15px, 55px, 15px, 55px;
+    border-radius: 3px;
+    gap: 10px;
+    background: rgba(22, 115, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+@media screen and (max-width:890px) {
+    .container {
+        padding: 50px 50px;
+    }
+
+    .contactWrapperleft {
+        width: 100%;
+    }
+
+    .contactWrapperRight {
+        width: 100%;
+        margin: 50px 0 0 0;
+    }
+
+    .inputfieldarea {
+        width: 100%;
+    }
+
+    .upperfield {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .container {
+        padding: 50px 20px;
+        flex-direction: column;
+    }
+
+    .contactWrapperleft {
+        width: 100%;
+    }
+
+    .contactWrapperRight {
+        width: 100%;
+        margin: 50px 0 0 0;
+    }
+
+    .conatctForm {
+        padding: 40px 20px;
+    }
+}

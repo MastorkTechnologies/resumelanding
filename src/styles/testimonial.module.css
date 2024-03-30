@@ -1,0 +1,128 @@
+.main {
+    width: 100%;
+}
+
+.container {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.container>h4 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.container>p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: center;
+}
+
+.mainSilder {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.newSilder {
+    padding: 0 63px;
+    width: calc(100% - 50px);
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.newSilder::-webkit-scrollbar {
+    width: 1px;
+}
+
+
+.listindex {
+    display: flex;
+    gap: 20px;
+}
+
+.leftSilderArrow {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.rightSilderArrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+
+.cardContainer {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cardContainer>img {
+    width: 200px;
+    height: auto;
+}
+
+.cardDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.star {
+    display: flex;
+    gap: 5px;
+
+}
+
+.cardDetails>p {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.cardDetails>p>span {
+    font-weight: 500;
+
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 50px 20px;
+    }
+
+    .container>h4 {
+        font-size: 24px;
+    }
+
+    .container>p {
+        font-size: 14px;
+    }
+
+    .container>p>br {
+        display: none;
+    }
+
+    .newSilder {
+        padding: 0 10px;
+    }
+
+    .cardContainer {
+        width: 280px;
+        flex-direction: column;
+    }
+}

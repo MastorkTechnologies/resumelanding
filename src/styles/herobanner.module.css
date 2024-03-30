@@ -1,0 +1,161 @@
+.main {
+    width: 100%;
+}
+
+.heroContainer {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroContainer>h3 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 80px;
+    text-align: center;
+
+}
+
+.heroContainer>h3>span {
+    color: rgba(22, 115, 255, 1);
+}
+
+.heroContainer>p {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    color: rgba(130, 130, 130, 1);
+    padding: 20px 300px;
+}
+
+.heroContainer>button {
+    padding: 20px 40px 20px 40px;
+    border-radius: 125px;
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(22, 115, 255, 1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    outline: none;
+    border: none;
+}
+
+.herodetails {
+    position: relative;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg {
+    position: absolute;
+    background: rgba(221, 237, 255, 1);
+    border-radius: 33%;
+    width: 100%;
+    height: 600px;
+    z-index: -1;
+    bottom: 0;
+}
+
+.heroImage {
+    width: auto;
+    height: 600px;
+}
+
+.herodetailsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 70px;
+}
+
+.herodetailsContent>h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(22, 115, 255, 1);
+
+}
+
+.herodetailsContent>p {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+}
+
+.herodetailsContent>p>span {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+    .heroContainer>p {
+        padding: 20px 150px;
+    }
+
+    .bg {
+        height: 400px;
+    }
+
+    .heroImage {
+        width: auto;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heroContainer>h3 {
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 40px;
+        text-align: center;
+
+    }
+
+    .heroContainer>p {
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: center;
+
+    }
+
+    .heroContainer>button {
+        margin-top: 50px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .bg {
+        height: 270px;
+    }
+
+    .herodetails {
+        margin: 20px 0;
+    }
+
+    .heroImage {
+        width: 350px;
+        height: auto;
+    }
+
+    .herodetailsContent>p {
+        font-size: 12px;
+        padding: 0 30px;
+    }
+
+    .herodetailsContent {
+        margin-bottom: 40px;
+
+    }
+}

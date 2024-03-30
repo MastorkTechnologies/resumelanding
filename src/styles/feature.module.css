@@ -1,0 +1,102 @@
+.main {
+    width: 100%;
+}
+
+.container {
+    padding: 100px 80px;
+}
+
+.container>h4 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.cardsection {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.card {
+    width: 100%;
+    min-width: 410px;
+    border-radius: 20px;
+    background: rgba(233, 245, 252, 1);
+
+}
+
+.cardContainer {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardContainer>.cardImg {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.cardContainer>h4 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.cardContainer>p {
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.20000000298023224px;
+    color: rgba(44, 44, 44, 1);
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        padding: 100px 50px;
+    }
+
+    .card {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .cardsection {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .container {
+        padding: 50px 20px;
+    }
+
+    .container>h4 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30.24px;
+        text-align: center;
+        color: black;
+    }
+
+    .cardsection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px 50px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

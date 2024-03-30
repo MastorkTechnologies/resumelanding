@@ -1,0 +1,31 @@
+.main {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 130px;
+}
+
+.aboutUsContent {
+    text-align: justify;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    color: black;
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 50px 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 50px 20px;
+    }
+}

@@ -49,21 +49,34 @@ export const hiwList = [
 
 export const testimonial = [
   {
-    picture: "/Images/t1.png",
-    description: `The ATS optimization was a game changer. I received more interview calls in a month than I had in a year. This service is a life saver.`,
-    name: "Jenny Wilson",
-    compnay: "Grower.io",
+    name: "Akshay Kapoor",
+    compnay: "Leading staffing agency from India",
+    picture: "/Images/user.png",
+    description: `Your AI Resume Builder has significantly improved our efficiency in reviewing candidate applications. With streamlined resume creation and optimization, we can focus more on evaluating qualifications rather than formatting.`,
   },
   {
-    picture: "/Images/t1.png",
-    description: `The ATS optimization was a game changer. I received more interview calls in a month than I had in a year. This service is a life saver.`,
-    name: "Jenny Wilson",
-    compnay: "Grower.io",
+    name: "Sarah Johnson",
+    compnay: "Leading staffing agency from US    ",
+    picture: "/Images/user.png",
+    description: `We've noticed a remarkable consistency in the quality of resumes generated through your platform. This uniformity has simplified our screening process and ensured that each candidate is presented in the best possible light.`,
   },
   {
-    picture: "/Images/t1.png",
-    description: `The ATS optimization was a game changer. I received more interview calls in a month than I had in a year. This service is a life saver.`,
-    name: "Jenny Wilson",
-    compnay: "Grower.io",
+    name: "Mehak Bohra",
+    compnay: "Leading hiring agency from India",
+    picture: "/Images/user.png",
+    description: `Candidates have expressed their appreciation for the user-friendly interface and the guidance provided by your AI Resume Builder. This positive feedback reflects well on our agency and enhances our reputation as a supportive and modern recruitment partner.`,
+  },
+  {
+    name: "Kartik Chugh    ",
+    compnay: "Leading staffing agency from India",
+    picture: "/Images/user.png",
+    description: `The range of customization options available within your platform allows candidates to customise their resumes to specific job roles and industries. This flexibility ensures that their applications are relevant and compelling, increasing their chances of success.
+    `,
+  },
+  {
+    name: " Michael Rodriguez    ",
+    compnay: " Leading hiring consultancy from US",
+    picture: "/Images/user.png",
+    description: `By automating many aspects of the resume creation process, your AI Resume Builder has saved us countless hours of manual work. This time-saving feature has allowed our team to focus on more strategic tasks, ultimately driving better outcomes for our clients and candidates.`,
   },
 ];

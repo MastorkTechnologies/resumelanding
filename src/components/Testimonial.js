@@ -36,7 +36,7 @@ const Testimonial = () => {
               return (
                 <div className={testimonialStyle.card} key={index}>
                   <div className={testimonialStyle.cardContainer}>
-                    <Image src={item.picture} alt='' width={240} height={240} />
+                    {/* <Image src={item.picture} alt='' width={240} height={240} /> */}
                     <div className={testimonialStyle.cardDetails}>
                       <div className={testimonialStyle.star}>
                         <Image

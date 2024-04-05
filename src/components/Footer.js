@@ -105,12 +105,27 @@ const Footer = () => {
                     Terms of service
                   </Link>
                 </p>
+                <p>
+                  <Link
+                    href='/refundpolicy'
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    Refund policy
+                  </Link>
+                </p>
               </div>
             </div>
             <div className={fstyle.footeroptions}>
               <h4>Connect with us</h4>
               <div className={fstyle.foptions}>
-                <p>contact@resumecraft.com</p>
+                <p>
+                  <a
+                    href='mailto:contact@resumecraft.com'
+                    style={{ color: "inherit", textDecoration: "none" }}
+                  >
+                    contact@resumecraft.com
+                  </a>
+                </p>
               </div>
             </div>
           </div>

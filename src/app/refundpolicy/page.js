@@ -55,11 +55,6 @@ const page = () => {
                 customer's account.
               </li>
               <li>
-                Refunds will be processed using the original method of payment
-                and may take up to 7-8 business days to reflect in the
-                customer's account.
-              </li>
-              <li>
                 After the expiration of the refund period, all payments made to
                 Resume Craft are considered non-refundable, including
                 subscription renewals and additional purchases.

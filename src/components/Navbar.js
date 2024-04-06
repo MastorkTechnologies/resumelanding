@@ -50,13 +50,13 @@ const Navbar = () => {
         </div>
         <div className={navStyle.menuitems}>
           <p onClick={() => navigation("/", "solution")}>Solution</p>
-          <p onClick={() => navigation("/blog")}>Blog</p>
           <p onClick={() => navigation("/", "howitworks")}>How it works</p>
           <p onClick={() => navigation("/", "features")}>Features</p>
+          <p onClick={() => navigation("/blog")}>Blogs</p>
           <p onClick={() => navigation("/", "reviews")}>Reviews</p>
         </div>
         <div className={navStyle.right}>
-          <p>Sign In</p>
+          <p><b>Sign In</b></p>
           <button onClick={() => navigation("/contact")}>Get Started</button>
         </div>
         <div className={navStyle.mobile}>
@@ -82,15 +82,16 @@ const Navbar = () => {
               </div>
               <div className={navStyle.menuMobileitems}>
                 <p onClick={() => navigation("/", "solution")}>Solution</p>
-                <p onClick={() => navigation("/blog")}>Blog</p>
+                
                 <p onClick={() => navigation("/", "howitworks")}>
                   How it works
                 </p>
                 <p onClick={() => navigation("/", "features")}>Features</p>
+                <p onClick={() => navigation("/blog")}>Blog</p>
                 <p onClick={() => navigation("/", "reviews")}>Reviews</p>
               </div>
               <div className={navStyle.rightMobile}>
-                <p>Sign In</p>
+                <p><b>Sign In</b></p>
                 <button onClick={() => navigation("/contact")}>
                   Get Started
                 </button>

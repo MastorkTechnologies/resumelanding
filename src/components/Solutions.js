@@ -26,7 +26,7 @@ const Solutions = () => {
                   <h4>{item.title}</h4>
                   <p>{item.description}</p>
                   <button>
-                    Get Statred{" "}
+                    Get Started{" "}
                     <svg
                       width='13'
                       height='14'

@@ -8,13 +8,11 @@ const HeroBanner = () => {
     <section className={heroStyle.main}>
       <div className={heroStyle.heroContainer}>
         <h3>
-          <span>Resume Craft </span> <br />
-          Revolutionizing Resume Creation
+          <span>ResumeCraft.io </span> <br />
+          Revolutionizing Resume Tailoring 
         </h3>
         <p>
-          In the fast-paced world of staffing, there's a game changer that's
-          turning the tide on traditional resume writing. Enter Resume Craft –
-          your partner in creating resumes quickly and efficiently.
+        Your ally in resume-tailoring to secure that dream job. Simplify the process with ATS-compatibility, professionally formatted templates, and grammatical precision.
         </p>
         <button>
           <Link
@@ -50,12 +48,14 @@ const HeroBanner = () => {
           className={heroStyle.heroImage}
         />
         <div className={heroStyle.herodetailsContent}>
-          <h4>A New Dawn for Staffing Agencies</h4>
+          <h4>A New Dawn For Streamlining Your Resume Crafting Process</h4>
           <p>
-            There was a time when <span>staffing professionals</span> like you
+            {/* There was a time when <span>staffing professionals</span> like you
             were buried under piles of resumes, racing against time to <br />{" "}
             meet the endless demands of job placements. But now, with{" "}
-            <span>Resume Craft</span>, those days are a distant memory.
+            <span>Resume Craft</span>, those days are a distant memory. */}
+            There was a time when students struggled with the complexity of resume tailoring alone, feeling the weight of uncertainty and self-doubt. But Resumecraft.io has changed the game, simplifying the process with its innovative platform.
+
           </p>
         </div>
       </div>
